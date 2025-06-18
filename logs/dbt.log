@@ -80,3 +80,327 @@ Runtime Error
 [0m12:43:30.064137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B933CF8CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9313444A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B93429E810>]}
 [0m12:43:30.064137 [debug] [MainThread]: Flushing usage events
 [0m12:43:30.419238 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:56:07.159996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F213E97620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F214B9A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2150C7D90>]}
+
+
+============================== 16:56:07.164799 | df7647d3-ed94-41d7-8b4b-8c93f5a3959f ==============================
+[0m16:56:07.164799 [info ] [MainThread]: Running with dbt=1.10.1
+[0m16:56:07.166656 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:56:07.542527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'df7647d3-ed94-41d7-8b4b-8c93f5a3959f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F21459AFD0>]}
+[0m16:56:07.584154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'df7647d3-ed94-41d7-8b4b-8c93f5a3959f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2170018C0>]}
+[0m16:56:07.585254 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m16:56:07.786721 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m16:56:07.968960 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:56:07.969339 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:56:07.992986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'df7647d3-ed94-41d7-8b4b-8c93f5a3959f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F217488B50>]}
+[0m16:56:08.038153 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\manifest.json
+[0m16:56:08.042331 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\semantic_manifest.json
+[0m16:56:08.061838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'df7647d3-ed94-41d7-8b4b-8c93f5a3959f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F213E9BA70>]}
+[0m16:56:08.062354 [info ] [MainThread]: Found 2 models, 477 macros
+[0m16:56:08.062969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df7647d3-ed94-41d7-8b4b-8c93f5a3959f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2170A9FD0>]}
+[0m16:56:08.064465 [info ] [MainThread]: 
+[0m16:56:08.065198 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m16:56:08.065726 [info ] [MainThread]: 
+[0m16:56:08.066376 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:56:08.070915 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m16:56:08.082570 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m16:56:08.165953 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m16:56:08.166296 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m16:56:08.166545 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:56:08.167064 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m16:56:08.167487 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m16:56:08.167890 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:56:08.796784 [debug] [ThreadPool]: SQL status: SUCCESS 54 in 0.629 seconds
+[0m16:56:08.843172 [debug] [ThreadPool]: SQL status: SUCCESS 54 in 0.676 seconds
+[0m16:56:08.848460 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_EXPOSE_DEV, now create_EXPOSE_DEV_dpulse_DPERFMGT)
+[0m16:56:08.849106 [debug] [ThreadPool]: Creating schema "database: "EXPOSE_DEV"
+schema: "dpulse_DPERFMGT"
+"
+[0m16:56:08.854902 [debug] [ThreadPool]: Using snowflake connection "create_EXPOSE_DEV_dpulse_DPERFMGT"
+[0m16:56:08.855521 [debug] [ThreadPool]: On create_EXPOSE_DEV_dpulse_DPERFMGT: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "create_EXPOSE_DEV_dpulse_DPERFMGT"} */
+create schema if not exists EXPOSE_DEV.dpulse_DPERFMGT
+[0m16:56:08.856442 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_EXPOSE_DEV, now create_EXPOSE_DEV_dpulse_DPULSE)
+[0m16:56:08.857019 [debug] [ThreadPool]: Creating schema "database: "EXPOSE_DEV"
+schema: "dpulse_DPULSE"
+"
+[0m16:56:08.858855 [debug] [ThreadPool]: Using snowflake connection "create_EXPOSE_DEV_dpulse_DPULSE"
+[0m16:56:08.859510 [debug] [ThreadPool]: On create_EXPOSE_DEV_dpulse_DPULSE: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "create_EXPOSE_DEV_dpulse_DPULSE"} */
+create schema if not exists EXPOSE_DEV.dpulse_DPULSE
+[0m16:56:08.930602 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bd1d20-0106-9fbc-0000-03a97fbbd0de
+[0m16:56:08.930963 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): Erreur de contrôle d'accès SQL :
+privilèges insuffisants pour effectuer des opérations sur database « EXPOSE_DEV »
+[0m16:56:08.931412 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m16:56:08.931678 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:56:09.010901 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bd1d20-0106-a02b-0000-03a97fbbbfb2
+[0m16:56:09.011318 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): Erreur de contrôle d'accès SQL :
+privilèges insuffisants pour effectuer des opérations sur database « EXPOSE_DEV »
+[0m16:56:09.011661 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m16:56:09.011873 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:56:09.012778 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:56:09.013200 [debug] [MainThread]: Connection 'create_EXPOSE_DEV_dpulse_DPULSE' was left open.
+[0m16:56:09.013557 [debug] [MainThread]: On create_EXPOSE_DEV_dpulse_DPULSE: Close
+[0m16:56:09.083520 [debug] [MainThread]: Connection 'create_EXPOSE_DEV_dpulse_DPERFMGT' was left open.
+[0m16:56:09.084408 [debug] [MainThread]: On create_EXPOSE_DEV_dpulse_DPERFMGT: Close
+[0m16:56:09.160459 [info ] [MainThread]: 
+[0m16:56:09.161121 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.09 seconds (1.09s).
+[0m16:56:09.161936 [error] [MainThread]: Encountered an error:
+Database Error
+  003001 (42501): Erreur de contrôle d'accès SQL :
+  privilèges insuffisants pour effectuer des opérations sur database « EXPOSE_DEV »
+[0m16:56:09.163544 [debug] [MainThread]: Command `dbt run` failed at 16:56:09.163335 after 2.24 seconds
+[0m16:56:09.164190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2176DA5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F214EA3D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F217836090>]}
+[0m16:56:09.164796 [debug] [MainThread]: Flushing usage events
+[0m16:56:09.257712 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:57:43.544379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019753957620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001975465A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019754B87D90>]}
+
+
+============================== 16:57:43.548486 | 78f92751-42bb-43ef-a26b-1d84b026b705 ==============================
+[0m16:57:43.548486 [info ] [MainThread]: Running with dbt=1.10.1
+[0m16:57:43.549741 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m16:57:43.926894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '78f92751-42bb-43ef-a26b-1d84b026b705', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001975405AFD0>]}
+[0m16:57:43.969359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '78f92751-42bb-43ef-a26b-1d84b026b705', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019756B918C0>]}
+[0m16:57:43.970456 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m16:57:44.153462 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m16:57:44.337864 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:57:44.338230 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:57:44.362243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '78f92751-42bb-43ef-a26b-1d84b026b705', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001975701CB50>]}
+[0m16:57:44.407978 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\manifest.json
+[0m16:57:44.411778 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\semantic_manifest.json
+[0m16:57:44.429660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '78f92751-42bb-43ef-a26b-1d84b026b705', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001975395BA70>]}
+[0m16:57:44.430060 [info ] [MainThread]: Found 2 models, 477 macros
+[0m16:57:44.430806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '78f92751-42bb-43ef-a26b-1d84b026b705', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019756C39FD0>]}
+[0m16:57:44.431999 [info ] [MainThread]: 
+[0m16:57:44.432690 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m16:57:44.433369 [info ] [MainThread]: 
+[0m16:57:44.434030 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:57:44.437509 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m16:57:44.449819 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m16:57:44.524776 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m16:57:44.525175 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m16:57:44.525425 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:57:44.526029 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m16:57:44.526309 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m16:57:44.526534 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:57:45.144944 [debug] [ThreadPool]: SQL status: SUCCESS 54 in 0.618 seconds
+[0m16:57:45.147140 [debug] [ThreadPool]: SQL status: SUCCESS 54 in 0.622 seconds
+[0m16:57:45.155887 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_EXPOSE_DEV, now create_EXPOSE_DEV_dpulse_DPERFMGT)
+[0m16:57:45.156540 [debug] [ThreadPool]: Creating schema "database: "EXPOSE_DEV"
+schema: "dpulse_DPERFMGT"
+"
+[0m16:57:45.161996 [debug] [ThreadPool]: Using snowflake connection "create_EXPOSE_DEV_dpulse_DPERFMGT"
+[0m16:57:45.162476 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_EXPOSE_DEV, now create_EXPOSE_DEV_dpulse_DPULSE)
+[0m16:57:45.163019 [debug] [ThreadPool]: On create_EXPOSE_DEV_dpulse_DPERFMGT: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "create_EXPOSE_DEV_dpulse_DPERFMGT"} */
+create schema if not exists EXPOSE_DEV.dpulse_DPERFMGT
+[0m16:57:45.163585 [debug] [ThreadPool]: Creating schema "database: "EXPOSE_DEV"
+schema: "dpulse_DPULSE"
+"
+[0m16:57:45.165479 [debug] [ThreadPool]: Using snowflake connection "create_EXPOSE_DEV_dpulse_DPULSE"
+[0m16:57:45.165801 [debug] [ThreadPool]: On create_EXPOSE_DEV_dpulse_DPULSE: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "create_EXPOSE_DEV_dpulse_DPULSE"} */
+create schema if not exists EXPOSE_DEV.dpulse_DPULSE
+[0m16:57:45.249074 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bd1d21-0106-9fbc-0000-03a97fbbd23a
+[0m16:57:45.249645 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): Erreur de contrôle d'accès SQL :
+privilèges insuffisants pour effectuer des opérations sur database « EXPOSE_DEV »
+[0m16:57:45.250134 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m16:57:45.250430 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:57:45.257779 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bd1d21-0106-a02b-0000-03a97fbbe13a
+[0m16:57:45.258265 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): Erreur de contrôle d'accès SQL :
+privilèges insuffisants pour effectuer des opérations sur database « EXPOSE_DEV »
+[0m16:57:45.258692 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m16:57:45.258979 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:57:45.259810 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:57:45.260101 [debug] [MainThread]: Connection 'create_EXPOSE_DEV_dpulse_DPERFMGT' was left open.
+[0m16:57:45.260354 [debug] [MainThread]: On create_EXPOSE_DEV_dpulse_DPERFMGT: Close
+[0m16:57:45.373066 [debug] [MainThread]: Connection 'create_EXPOSE_DEV_dpulse_DPULSE' was left open.
+[0m16:57:45.373870 [debug] [MainThread]: On create_EXPOSE_DEV_dpulse_DPULSE: Close
+[0m16:57:45.559416 [info ] [MainThread]: 
+[0m16:57:45.560048 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.13 seconds (1.13s).
+[0m16:57:45.560765 [error] [MainThread]: Encountered an error:
+Database Error
+  003001 (42501): Erreur de contrôle d'accès SQL :
+  privilèges insuffisants pour effectuer des opérations sur database « EXPOSE_DEV »
+[0m16:57:45.561767 [debug] [MainThread]: Command `dbt run` failed at 16:57:45.561605 after 2.29 seconds
+[0m16:57:45.562261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001975756E820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019754963D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197573C6090>]}
+[0m16:57:45.562737 [debug] [MainThread]: Flushing usage events
+[0m16:57:45.886935 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:57:57.261271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DFFC37620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D819CA490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D81EF7D90>]}
+
+
+============================== 16:57:57.266786 | bca05128-54c3-441f-8c80-afbdd76eeaf9 ==============================
+[0m16:57:57.266786 [info ] [MainThread]: Running with dbt=1.10.1
+[0m16:57:57.267590 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:57:57.661892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bca05128-54c3-441f-8c80-afbdd76eeaf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D813DAFD0>]}
+[0m16:57:57.708001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bca05128-54c3-441f-8c80-afbdd76eeaf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D83E318C0>]}
+[0m16:57:57.709282 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m16:57:57.894122 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m16:57:58.059030 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:57:58.059376 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:57:58.085126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bca05128-54c3-441f-8c80-afbdd76eeaf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D842B8B50>]}
+[0m16:57:58.129469 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\manifest.json
+[0m16:57:58.133476 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\semantic_manifest.json
+[0m16:57:58.151814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bca05128-54c3-441f-8c80-afbdd76eeaf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DFFC3BA70>]}
+[0m16:57:58.152235 [info ] [MainThread]: Found 2 models, 477 macros
+[0m16:57:58.152981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bca05128-54c3-441f-8c80-afbdd76eeaf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D83ED9FD0>]}
+[0m16:57:58.154322 [info ] [MainThread]: 
+[0m16:57:58.154997 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m16:57:58.155553 [info ] [MainThread]: 
+[0m16:57:58.156287 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:57:58.160876 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m16:57:58.174727 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m16:57:58.242801 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m16:57:58.243219 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m16:57:58.243548 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m16:57:58.243808 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m16:57:58.244043 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:57:58.244268 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:57:58.761537 [debug] [ThreadPool]: SQL status: SUCCESS 54 in 0.517 seconds
+[0m16:57:58.772254 [debug] [ThreadPool]: SQL status: SUCCESS 54 in 0.528 seconds
+[0m16:57:58.775906 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_EXPOSE_DEV, now create_EXPOSE_DEV_dpulse_DPULSE)
+[0m16:57:58.776602 [debug] [ThreadPool]: Creating schema "database: "EXPOSE_DEV"
+schema: "dpulse_DPULSE"
+"
+[0m16:57:58.778735 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_EXPOSE_DEV, now create_EXPOSE_DEV_dpulse_DPERFMGT)
+[0m16:57:58.779519 [debug] [ThreadPool]: Creating schema "database: "EXPOSE_DEV"
+schema: "dpulse_DPERFMGT"
+"
+[0m16:57:58.782525 [debug] [ThreadPool]: Using snowflake connection "create_EXPOSE_DEV_dpulse_DPULSE"
+[0m16:57:58.784062 [debug] [ThreadPool]: Using snowflake connection "create_EXPOSE_DEV_dpulse_DPERFMGT"
+[0m16:57:58.784546 [debug] [ThreadPool]: On create_EXPOSE_DEV_dpulse_DPULSE: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "create_EXPOSE_DEV_dpulse_DPULSE"} */
+create schema if not exists EXPOSE_DEV.dpulse_DPULSE
+[0m16:57:58.784902 [debug] [ThreadPool]: On create_EXPOSE_DEV_dpulse_DPERFMGT: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "create_EXPOSE_DEV_dpulse_DPERFMGT"} */
+create schema if not exists EXPOSE_DEV.dpulse_DPERFMGT
+[0m16:57:58.867375 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bd1d21-0106-a02b-0000-03a97fbbe15e
+[0m16:57:58.867935 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): Erreur de contrôle d'accès SQL :
+privilèges insuffisants pour effectuer des opérations sur database « EXPOSE_DEV »
+[0m16:57:58.868479 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m16:57:58.868813 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:57:58.870717 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bd1d21-0106-9fbc-0000-03a97fbbd24e
+[0m16:57:58.871044 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): Erreur de contrôle d'accès SQL :
+privilèges insuffisants pour effectuer des opérations sur database « EXPOSE_DEV »
+[0m16:57:58.871397 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m16:57:58.871667 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:57:58.872475 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:57:58.872816 [debug] [MainThread]: Connection 'create_EXPOSE_DEV_dpulse_DPULSE' was left open.
+[0m16:57:58.873106 [debug] [MainThread]: On create_EXPOSE_DEV_dpulse_DPULSE: Close
+[0m16:57:58.950152 [debug] [MainThread]: Connection 'create_EXPOSE_DEV_dpulse_DPERFMGT' was left open.
+[0m16:57:58.951044 [debug] [MainThread]: On create_EXPOSE_DEV_dpulse_DPERFMGT: Close
+[0m16:57:59.114023 [info ] [MainThread]: 
+[0m16:57:59.116054 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.96 seconds (0.96s).
+[0m16:57:59.118254 [error] [MainThread]: Encountered an error:
+Database Error
+  003001 (42501): Erreur de contrôle d'accès SQL :
+  privilèges insuffisants pour effectuer des opérations sur database « EXPOSE_DEV »
+[0m16:57:59.120509 [debug] [MainThread]: Command `dbt run` failed at 16:57:59.120272 after 2.10 seconds
+[0m16:57:59.121142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D84821CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D81CD3D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D84665FD0>]}
+[0m16:57:59.121733 [debug] [MainThread]: Flushing usage events
+[0m16:57:59.181250 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:02:53.243803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4CDC7620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4DADA490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4E007D90>]}
+
+
+============================== 17:02:53.257324 | a0024278-9d54-456d-89e3-0a24447fb946 ==============================
+[0m17:02:53.257324 [info ] [MainThread]: Running with dbt=1.10.1
+[0m17:02:53.259300 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select crm_deal_quote_relevant', 'send_anonymous_usage_stats': 'True'}
+[0m17:02:53.759184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a0024278-9d54-456d-89e3-0a24447fb946', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4D4DAFD0>]}
+[0m17:02:53.816320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a0024278-9d54-456d-89e3-0a24447fb946', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4FF118C0>]}
+[0m17:02:53.817502 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m17:02:54.045636 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m17:02:54.234478 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:02:54.234916 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:02:54.267221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a0024278-9d54-456d-89e3-0a24447fb946', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B50398B50>]}
+[0m17:02:54.326635 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\manifest.json
+[0m17:02:54.331151 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\semantic_manifest.json
+[0m17:02:54.352967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a0024278-9d54-456d-89e3-0a24447fb946', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4CDCBA70>]}
+[0m17:02:54.353474 [info ] [MainThread]: Found 2 models, 477 macros
+[0m17:02:54.354144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a0024278-9d54-456d-89e3-0a24447fb946', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4FFB9FD0>]}
+[0m17:02:54.355520 [info ] [MainThread]: 
+[0m17:02:54.356227 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m17:02:54.356833 [info ] [MainThread]: 
+[0m17:02:54.357638 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:02:54.358710 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m17:02:54.474727 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m17:02:54.475284 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m17:02:54.475663 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:55.065448 [debug] [ThreadPool]: SQL status: SUCCESS 54 in 0.590 seconds
+[0m17:02:55.070807 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_EXPOSE_DEV, now create_EXPOSE_DEV_dpulse_DPULSE)
+[0m17:02:55.071696 [debug] [ThreadPool]: Creating schema "database: "EXPOSE_DEV"
+schema: "dpulse_DPULSE"
+"
+[0m17:02:55.078007 [debug] [ThreadPool]: Using snowflake connection "create_EXPOSE_DEV_dpulse_DPULSE"
+[0m17:02:55.078555 [debug] [ThreadPool]: On create_EXPOSE_DEV_dpulse_DPULSE: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "GLOBAL_PERFMGT", "target_name": "dev", "connection_name": "create_EXPOSE_DEV_dpulse_DPULSE"} */
+create schema if not exists EXPOSE_DEV.dpulse_DPULSE
+[0m17:02:55.208598 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bd1d26-0106-9fbc-0000-03a97fbc101e
+[0m17:02:55.209354 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): Erreur de contrôle d'accès SQL :
+privilèges insuffisants pour effectuer des opérations sur database « EXPOSE_DEV »
+[0m17:02:55.210086 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m17:02:55.210585 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m17:02:55.212702 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:02:55.213366 [debug] [MainThread]: Connection 'create_EXPOSE_DEV_dpulse_DPULSE' was left open.
+[0m17:02:55.213879 [debug] [MainThread]: On create_EXPOSE_DEV_dpulse_DPULSE: Close
+[0m17:02:55.308940 [info ] [MainThread]: 
+[0m17:02:55.310234 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.95 seconds (0.95s).
+[0m17:02:55.311728 [error] [MainThread]: Encountered an error:
+Database Error
+  003001 (42501): Erreur de contrôle d'accès SQL :
+  privilèges insuffisants pour effectuer des opérations sur database « EXPOSE_DEV »
+[0m17:02:55.313695 [debug] [MainThread]: Command `dbt run` failed at 17:02:55.313469 after 2.50 seconds
+[0m17:02:55.314385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B509DBEE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4DDE3D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B509B2E10>]}
+[0m17:02:55.315034 [debug] [MainThread]: Flushing usage events
+[0m17:02:55.658023 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:03:28.381386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C043FA270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C0534FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C050916D0>]}
+
+
+============================== 17:03:28.388247 | d6f81a2b-d46d-48a7-9b9d-7a9234f4856f ==============================
+[0m17:03:28.388247 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:03:28.389399 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:03:28.510769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd6f81a2b-d46d-48a7-9b9d-7a9234f4856f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C04AA0D60>]}
+[0m17:03:28.550258 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m17:03:28.552341 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m17:03:28.553592 [debug] [MainThread]: Command `cli deps` succeeded at 17:03:28.553299 after 0.53 seconds
+[0m17:03:28.555240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C053B3F00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C056E07C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C053BF950>]}
+[0m17:03:28.555652 [debug] [MainThread]: Flushing usage events
+[0m17:03:28.659838 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:03:43.899106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002783E57A270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002783F4CFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002783F20D6D0>]}
+
+
+============================== 17:03:43.905398 | 33f67839-1671-4ea3-94e1-15b782339b0e ==============================
+[0m17:03:43.905398 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:03:43.906117 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m17:03:44.320543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '33f67839-1671-4ea3-94e1-15b782339b0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002783EC20D60>]}
+[0m17:03:44.367765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '33f67839-1671-4ea3-94e1-15b782339b0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278416D47C0>]}
+[0m17:03:44.368780 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m17:03:44.586012 [debug] [MainThread]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m17:03:44.728564 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m17:03:44.729662 [debug] [MainThread]: previous checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, current checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c
+[0m17:03:44.730096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '33f67839-1671-4ea3-94e1-15b782339b0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278419A8850>]}
+[0m17:03:45.486941 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'CRM_DEAL_QUOTE_RELEVANT' in the 'models' section of file 'models\DPULSE\schema.yml'
+[0m17:03:45.570596 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.GLOBAL_PERFMGT.unique_CRM_DEAL_QUOTE_RELEVANT_opportunityid.cb346feb1b' (models\DPULSE\schema.yml) depends on a node named 'CRM_DEAL_QUOTE_RELEVANT' in package '' which was not found
+[0m17:03:45.571173 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.GLOBAL_PERFMGT.not_null_CRM_DEAL_QUOTE_RELEVANT_opportunityid.98ccdb2521' (models\DPULSE\schema.yml) depends on a node named 'CRM_DEAL_QUOTE_RELEVANT' in package '' which was not found
+[0m17:03:45.633709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '33f67839-1671-4ea3-94e1-15b782339b0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027841934AA0>]}
+[0m17:03:45.692032 [debug] [MainThread]: Wrote artifact WritableManifest to c:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\manifest.json
+[0m17:03:45.696706 [debug] [MainThread]: Wrote artifact SemanticManifest to c:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\semantic_manifest.json
+[0m17:03:45.721692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '33f67839-1671-4ea3-94e1-15b782339b0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027841CD5FD0>]}
+[0m17:03:45.722443 [info ] [MainThread]: Found 2 models, 477 macros
+[0m17:03:45.722974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '33f67839-1671-4ea3-94e1-15b782339b0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027841B33A00>]}
+[0m17:03:45.723758 [warn ] [MainThread]: The selection criterion 'dbt_project.yml+' does not match any enabled nodes
+[0m17:03:45.725054 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m17:03:45.725593 [debug] [MainThread]: Command end result
+[0m17:03:45.745815 [debug] [MainThread]: Wrote artifact WritableManifest to c:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\manifest.json
+[0m17:03:45.749907 [debug] [MainThread]: Wrote artifact SemanticManifest to c:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\semantic_manifest.json
+[0m17:03:45.754730 [debug] [MainThread]: Wrote artifact RunExecutionResult to c:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\target\run_results.json
+[0m17:03:45.755884 [debug] [MainThread]: Command `cli run` succeeded at 17:03:45.755710 after 2.14 seconds
+[0m17:03:45.756413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002783F4BB650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027841D3DE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027841D3D650>]}
+[0m17:03:45.756915 [debug] [MainThread]: Flushing usage events
+[0m17:03:45.852361 [debug] [MainThread]: An error was encountered while trying to flush usage events
