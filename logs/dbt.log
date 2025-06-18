@@ -404,3 +404,150 @@ Database Error
 [0m17:03:45.756413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002783F4BB650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027841D3DE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027841D3D650>]}
 [0m17:03:45.756915 [debug] [MainThread]: Flushing usage events
 [0m17:03:45.852361 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:59:02.349158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234E611A270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234E705FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234E6D9D6D0>]}
+
+
+============================== 21:59:02.358205 | a789415a-89eb-482f-8112-390b48ab8bd1 ==============================
+[0m21:59:02.358205 [info ] [MainThread]: Running with dbt=1.9.4
+[0m21:59:02.358908 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:59:02.438556 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['name']: 'snfk-dbt' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in c:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\dbt_project.yml
+[0m21:59:02.439604 [debug] [MainThread]: Command `cli deps` failed at 21:59:02.439468 after 0.36 seconds
+[0m21:59:02.439996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234E7315CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234E7332E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234E70C3CE0>]}
+[0m21:59:02.440435 [debug] [MainThread]: Flushing usage events
+[0m21:59:02.854842 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:06:55.510808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EFF847620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E8060A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E80B37D90>]}
+
+
+============================== 22:06:55.515486 | f5d310eb-fe34-4b1e-bea3-e1691d86c4d2 ==============================
+[0m22:06:55.515486 [info ] [MainThread]: Running with dbt=1.10.1
+[0m22:06:55.516788 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt run --select crm_deal_quote_relevant', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:06:55.520490 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'snfk-dbt'
+[0m22:06:55.521730 [debug] [MainThread]: Command `dbt run` failed at 22:06:55.521587 after 0.24 seconds
+[0m22:06:55.522119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E80B61F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E80BA4CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E80A4D150>]}
+[0m22:06:55.522478 [debug] [MainThread]: Flushing usage events
+[0m22:06:55.629042 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:07:42.949839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002039F137620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002039FE3A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A0367D90>]}
+
+
+============================== 22:07:42.955538 | f031c830-7880-442f-9060-3dce47df14bf ==============================
+[0m22:07:42.955538 [info ] [MainThread]: Running with dbt=1.10.1
+[0m22:07:42.956700 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select crm_deal_quote_relevant', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:07:42.960220 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'snfk-dbt'
+[0m22:07:42.961820 [debug] [MainThread]: Command `dbt run` failed at 22:07:42.961611 after 0.24 seconds
+[0m22:07:42.962375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A0391F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A03D4CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203A027D150>]}
+[0m22:07:42.962981 [debug] [MainThread]: Flushing usage events
+[0m22:07:43.351047 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:08:27.775081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001839E627620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001839F32A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001839F857D90>]}
+
+
+============================== 22:08:27.782957 | 7d59f7cd-de76-4223-9e68-5140adbcd1b6 ==============================
+[0m22:08:27.782957 [info ] [MainThread]: Running with dbt=1.10.1
+[0m22:08:27.784617 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select crm_deal_quote_relevant', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:08:27.788576 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'snfk-dbt'
+[0m22:08:27.789737 [debug] [MainThread]: Command `dbt run` failed at 22:08:27.789523 after 0.23 seconds
+[0m22:08:27.790371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001839F881F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001839F8C4CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001839F76D150>]}
+[0m22:08:27.790809 [debug] [MainThread]: Flushing usage events
+[0m22:08:27.891123 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:10:25.652950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231A8407620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231A911A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231A9647D90>]}
+
+
+============================== 22:10:25.661018 | dde1fa6d-2045-4ae7-9100-d0d7e18323a8 ==============================
+[0m22:10:25.661018 [info ] [MainThread]: Running with dbt=1.10.1
+[0m22:10:25.662729 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --target dev --select crm_deal_quote_relevant', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:10:25.668167 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'snfk-dbt'
+[0m22:10:25.670368 [debug] [MainThread]: Command `dbt run` failed at 22:10:25.670013 after 0.31 seconds
+[0m22:10:25.671462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231A9671F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231A96B4CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231A955D150>]}
+[0m22:10:25.672373 [debug] [MainThread]: Flushing usage events
+[0m22:10:26.029884 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:11:19.803364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D547B6270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D556FFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D5543D6D0>]}
+
+
+============================== 22:11:19.807897 | 88944586-eab6-4cfb-873a-6354dce0f4ed ==============================
+[0m22:11:19.807897 [info ] [MainThread]: Running with dbt=1.9.4
+[0m22:11:19.808423 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m22:11:19.857650 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['name']: 'snfk-dbt' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in c:\Users\alban.homo\dev\snfk-dbt\snfk-dbt\dbt_project.yml
+[0m22:11:19.858464 [debug] [MainThread]: Command `cli deps` failed at 22:11:19.858337 after 0.29 seconds
+[0m22:11:19.858838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D559B5CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D559D2E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D55767CE0>]}
+[0m22:11:19.859225 [debug] [MainThread]: Flushing usage events
+[0m22:11:19.945747 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:31:41.177921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AD8487620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AD9196490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AD96AFC50>]}
+
+
+============================== 22:31:41.186796 | 41a0edd4-ba77-42d6-96e1-6eb808657f3e ==============================
+[0m22:31:41.186796 [info ] [MainThread]: Running with dbt=1.10.1
+[0m22:31:41.188310 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --target dev --select crm_deal_quote_relevant', 'send_anonymous_usage_stats': 'True'}
+[0m22:31:41.192660 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'snfk-dbt'
+[0m22:31:41.194551 [debug] [MainThread]: Command `dbt run` failed at 22:31:41.194321 after 0.28 seconds
+[0m22:31:41.195042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AD96E95B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AD95979B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AD96248D0>]}
+[0m22:31:41.195669 [debug] [MainThread]: Flushing usage events
+[0m22:31:41.274155 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:33:35.061081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0E09E7620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0E16F6490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0E1C0FC50>]}
+
+
+============================== 22:33:35.067439 | e6774e25-f1f3-4338-b401-91d2e479f345 ==============================
+[0m22:33:35.067439 [info ] [MainThread]: Running with dbt=1.10.1
+[0m22:33:35.068899 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --target dev', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:33:35.073845 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'snfk-dbt'
+[0m22:33:35.075679 [debug] [MainThread]: Command `dbt run` failed at 22:33:35.075496 after 0.34 seconds
+[0m22:33:35.076749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0E1C4D5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0E1AF79B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0E1B848D0>]}
+[0m22:33:35.077227 [debug] [MainThread]: Flushing usage events
+[0m22:33:35.472586 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:39:24.259173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FE3C27620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FE4926490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FE4E3FC50>]}
+
+
+============================== 22:39:24.267331 | 5fbd5285-ffeb-4421-87c1-1746e3e999d4 ==============================
+[0m22:39:24.267331 [info ] [MainThread]: Running with dbt=1.10.1
+[0m22:39:24.268922 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --target dev', 'send_anonymous_usage_stats': 'True'}
+[0m22:39:24.272445 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'snfk-dbt'
+[0m22:39:24.274404 [debug] [MainThread]: Command `dbt run` failed at 22:39:24.274129 after 0.42 seconds
+[0m22:39:24.274759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FE4E795B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FE4D279B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FE4DB48D0>]}
+[0m22:39:24.275124 [debug] [MainThread]: Flushing usage events
+[0m22:39:24.696231 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:40:04.413647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDB25A7620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDB32B6490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDB37CFC50>]}
+
+
+============================== 22:40:04.417759 | 71616183-395b-4a83-a2bb-469fba115c84 ==============================
+[0m22:40:04.417759 [info ] [MainThread]: Running with dbt=1.10.1
+[0m22:40:04.418817 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt run --target dev', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:40:04.736134 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "snfk-dbt", target "dev" invalid: 20250093 is not valid under any of the given schemas
+[0m22:40:04.737771 [debug] [MainThread]: Command `dbt run` failed at 22:40:04.737635 after 0.55 seconds
+[0m22:40:04.738131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDB586C180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDB5864EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDB57F0F30>]}
+[0m22:40:04.738517 [debug] [MainThread]: Flushing usage events
+[0m22:40:05.062446 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:42:49.105975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A26D27620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A27A26490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A27F3FC50>]}
+
+
+============================== 22:42:49.115689 | ebaa1277-c51a-4a56-936d-6c1ecf505ad4 ==============================
+[0m22:42:49.115689 [info ] [MainThread]: Running with dbt=1.10.1
+[0m22:42:49.117450 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk-dbt\\logs', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --target dev --select crm_deal_quote_relevant', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:42:49.435265 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "snfk-dbt", target "dev" invalid: 20250093 is not valid under any of the given schemas
+[0m22:42:49.436840 [debug] [MainThread]: Command `dbt run` failed at 22:42:49.436605 after 0.57 seconds
+[0m22:42:49.437272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A29EE8180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A29EE4EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A29E74F30>]}
+[0m22:42:49.437677 [debug] [MainThread]: Flushing usage events
+[0m22:42:49.780435 [debug] [MainThread]: An error was encountered while trying to flush usage events
