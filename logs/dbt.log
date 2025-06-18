@@ -1,0 +1,29 @@
+[0m12:31:12.252453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020150F81520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201543C8BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201549D3D70>]}
+
+
+============================== 12:31:12.252453 | 1c9568eb-e7ff-4daf-b16c-672eea9748b1 ==============================
+[0m12:31:12.252453 [info ] [MainThread]: Running with dbt=1.9.0
+[0m12:31:12.252453 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\etienne.gelfi\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init DPERFMGT', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:31:12.291654 [debug] [MainThread]: Starter project path: C:\Users\etienne.gelfi\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\include\starter_project
+[0m12:31:12.333421 [info ] [MainThread]: 
+Your new dbt project "DPERFMGT" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:31:12.334425 [info ] [MainThread]: Setting up your profile.
+[0m12:32:25.179006 [info ] [MainThread]: Profile DPERFMGT written to C:\Users\etienne.gelfi\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:32:25.179006 [debug] [MainThread]: Command `dbt init` succeeded at 12:32:25.179006 after 73.21 seconds
+[0m12:32:25.179006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020154BCBA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020156B4F590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020156C6DBE0>]}
+[0m12:32:25.181640 [debug] [MainThread]: Flushing usage events
+[0m12:32:25.513578 [debug] [MainThread]: An error was encountered while trying to flush usage events
