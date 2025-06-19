@@ -1,0 +1,1 @@
+select * from crm_quote limit 1000
