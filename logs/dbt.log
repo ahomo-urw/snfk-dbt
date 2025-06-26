@@ -831,3 +831,791 @@ Database Error
 [0m16:07:58.359715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011AA685BE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011AA3ACF650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011AA680A210>]}
 [0m16:07:58.360253 [debug] [MainThread]: Flushing usage events
 [0m16:07:58.422072 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:16:23.090951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0F8267620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0F8F76490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0F948FC50>]}
+
+
+============================== 16:16:23.098001 | 9bc93287-dc7a-4af4-afff-969b7a40c4d1 ==============================
+[0m16:16:23.098001 [info ] [MainThread]: Running with dbt=1.10.1
+[0m16:16:23.099144 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt run --select test_view', 'send_anonymous_usage_stats': 'True'}
+[0m16:16:23.346498 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "albinus", target "dev" invalid: 20250093 is not valid under any of the given schemas
+[0m16:16:23.347851 [debug] [MainThread]: Command `dbt run` failed at 16:16:23.347734 after 0.53 seconds
+[0m16:16:23.348120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0FB4FC180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0FB4F8EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0FB484F30>]}
+[0m16:16:23.348380 [debug] [MainThread]: Flushing usage events
+[0m16:16:23.662345 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:55:41.327530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298CDB5F4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298CE86A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298CED7FED0>]}
+
+
+============================== 08:55:41.336313 | 404d0a72-8485-4cef-9b69-4052b5c32ebf ==============================
+[0m08:55:41.336313 [info ] [MainThread]: Running with dbt=1.10.1
+[0m08:55:41.336853 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt ', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:55:41.483125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '404d0a72-8485-4cef-9b69-4052b5c32ebf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298CE26ED70>]}
+[0m08:55:41.505909 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:55:41.507830 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:55:41.509399 [debug] [MainThread]: Command `cli deps` succeeded at 08:55:41.509257 after 0.41 seconds
+[0m08:55:41.509723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298CEE09480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298CEE087C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298CEE11150>]}
+[0m08:55:41.510008 [debug] [MainThread]: Flushing usage events
+[0m08:55:41.804746 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:56:18.798768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B7A4F4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B874A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B8C5BED0>]}
+
+
+============================== 08:56:18.802927 | dbf24d48-b439-400f-8fbb-dc4412b3ade3 ==============================
+[0m08:56:18.802927 [info ] [MainThread]: Running with dbt=1.10.1
+[0m08:56:18.803604 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt ', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:56:18.938541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dbf24d48-b439-400f-8fbb-dc4412b3ade3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B8152D70>]}
+[0m08:56:18.978336 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:56:18.983365 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:56:18.986216 [debug] [MainThread]: Command `cli deps` succeeded at 08:56:18.986017 after 0.43 seconds
+[0m08:56:18.986667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B8CE9480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B8CE87C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B8CF1150>]}
+[0m08:56:18.987154 [debug] [MainThread]: Flushing usage events
+[0m08:56:19.319741 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:28:18.287914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000145759C34D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000145766BA490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014576BCBED0>]}
+
+
+============================== 12:28:18.297233 | 81a4f762-e93b-43cc-ad4e-89ce7f53a377 ==============================
+[0m12:28:18.297233 [info ] [MainThread]: Running with dbt=1.10.1
+[0m12:28:18.297936 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt ', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:28:18.504968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '81a4f762-e93b-43cc-ad4e-89ce7f53a377', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000145760C2D70>]}
+[0m12:28:18.531683 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m12:28:18.534584 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m12:28:18.536734 [debug] [MainThread]: Command `cli deps` succeeded at 12:28:18.536501 after 0.55 seconds
+[0m12:28:18.537081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014576C59480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014576C587C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014576C61150>]}
+[0m12:28:18.537366 [debug] [MainThread]: Flushing usage events
+[0m12:28:18.870795 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:51:37.263554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187A5AD34D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187A67DA490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187A6CEBED0>]}
+
+
+============================== 13:51:37.269199 | 1c92c17e-dd04-41bd-bec5-c1f50d0631fd ==============================
+[0m13:51:37.269199 [info ] [MainThread]: Running with dbt=1.10.1
+[0m13:51:37.269719 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:51:37.385596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1c92c17e-dd04-41bd-bec5-c1f50d0631fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187A61E2D70>]}
+[0m13:51:37.409355 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:51:37.411634 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:51:37.413782 [debug] [MainThread]: Command `cli deps` succeeded at 13:51:37.413354 after 0.42 seconds
+[0m13:51:37.414169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187A6D79480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187A6D787C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187A6D81150>]}
+[0m13:51:37.414479 [debug] [MainThread]: Flushing usage events
+[0m13:51:37.798206 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:52:17.848781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0DB5834D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0DC27A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0DC78FED0>]}
+
+
+============================== 13:52:17.856489 | ee3eced8-bd36-4334-96e2-507e5983b0e1 ==============================
+[0m13:52:17.856489 [info ] [MainThread]: Running with dbt=1.10.1
+[0m13:52:17.857355 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m13:52:17.963431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ee3eced8-bd36-4334-96e2-507e5983b0e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0DBC7ED70>]}
+[0m13:52:17.983675 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:52:17.985677 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:52:17.987337 [debug] [MainThread]: Command `cli deps` succeeded at 13:52:17.987193 after 0.42 seconds
+[0m13:52:17.987675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0DC819480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0DC8187C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0DC821150>]}
+[0m13:52:17.987976 [debug] [MainThread]: Flushing usage events
+[0m13:52:18.046467 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:51:51.819465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEADB934D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEAE88A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEAED9FED0>]}
+
+
+============================== 12:51:51.833549 | bd27ba71-18f5-46eb-9b43-5a1ebb10c19c ==============================
+[0m12:51:51.833549 [info ] [MainThread]: Running with dbt=1.10.1
+[0m12:51:51.834699 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt ', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:51:52.075886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bd27ba71-18f5-46eb-9b43-5a1ebb10c19c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEAE292D70>]}
+[0m12:51:52.105889 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m12:51:52.109932 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m12:51:52.111753 [debug] [MainThread]: Command `cli deps` succeeded at 12:51:52.111521 after 0.59 seconds
+[0m12:51:52.112148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEAEE29480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEAEE287C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEAEE31150>]}
+[0m12:51:52.112497 [debug] [MainThread]: Flushing usage events
+[0m12:51:52.498619 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:27:27.441614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222681434D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022268E3A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002226934FED0>]}
+
+
+============================== 09:27:27.454231 | 07316847-afb5-4765-902d-5b916b19c988 ==============================
+[0m09:27:27.454231 [info ] [MainThread]: Running with dbt=1.10.1
+[0m09:27:27.456286 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt ', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:27:27.874715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '07316847-afb5-4765-902d-5b916b19c988', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002226884ED70>]}
+[0m09:27:27.941427 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:27:27.946393 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:27:27.949128 [debug] [MainThread]: Command `cli deps` succeeded at 09:27:27.948858 after 0.88 seconds
+[0m09:27:27.949819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222693D9480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222693D87C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222693E1150>]}
+[0m09:27:27.951309 [debug] [MainThread]: Flushing usage events
+[0m09:27:28.328590 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:16:25.705186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222639A34D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222646AA490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022264BBFED0>]}
+
+
+============================== 10:16:25.719799 | e555889a-5c56-4e39-971c-9603ef63d72f ==============================
+[0m10:16:25.719799 [info ] [MainThread]: Running with dbt=1.10.1
+[0m10:16:25.721777 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m10:16:26.007382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e555889a-5c56-4e39-971c-9603ef63d72f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222640B2D70>]}
+[0m10:16:26.053872 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:16:26.056823 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:16:26.059255 [debug] [MainThread]: Command `cli deps` succeeded at 10:16:26.058979 after 0.77 seconds
+[0m10:16:26.060346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022264C49480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022264C487C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022264C51150>]}
+[0m10:16:26.061612 [debug] [MainThread]: Flushing usage events
+[0m10:16:26.493905 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:30:18.742485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E969834D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E9766A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E97B7FED0>]}
+
+
+============================== 11:30:18.751508 | 1fb5205b-b5f5-4d32-b2ac-f63e6a8bc9f7 ==============================
+[0m11:30:18.751508 [info ] [MainThread]: Running with dbt=1.10.1
+[0m11:30:18.751967 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt ', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:30:18.872563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1fb5205b-b5f5-4d32-b2ac-f63e6a8bc9f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E9707ED70>]}
+[0m11:30:18.895403 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:30:18.896959 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:30:18.898076 [debug] [MainThread]: Command `cli deps` succeeded at 11:30:18.897952 after 0.38 seconds
+[0m11:30:18.898376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E97C09480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E97C087C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E97C11150>]}
+[0m11:30:18.898652 [debug] [MainThread]: Flushing usage events
+[0m11:30:19.303197 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:40:18.125266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E149FA7620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E14ACA6490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E14B1BFC50>]}
+
+
+============================== 11:40:18.131978 | f804e7fa-ae21-4456-8a5c-399f53243f0d ==============================
+[0m11:40:18.131978 [info ] [MainThread]: Running with dbt=1.10.1
+[0m11:40:18.133463 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --select test_view', 'send_anonymous_usage_stats': 'True'}
+[0m11:40:18.451383 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "albinus", target "dev" invalid: 20250093 is not valid under any of the given schemas
+[0m11:40:18.452841 [debug] [MainThread]: Command `dbt run` failed at 11:40:18.452713 after 0.53 seconds
+[0m11:40:18.453171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E14D18C180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E14D188EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E14D114F30>]}
+[0m11:40:18.453505 [debug] [MainThread]: Flushing usage events
+[0m11:40:18.790787 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:41:16.549433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204DE707620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204DF416490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204DF92FC50>]}
+
+
+============================== 11:41:16.556644 | 15590ada-b517-4ffe-8944-92b49d0c2b08 ==============================
+[0m11:41:16.556644 [info ] [MainThread]: Running with dbt=1.10.1
+[0m11:41:16.558207 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --select test_view', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:41:16.879746 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "albinus", target "dev" invalid: 20250093 is not valid under any of the given schemas
+[0m11:41:16.881110 [debug] [MainThread]: Command `dbt run` failed at 11:41:16.880980 after 0.61 seconds
+[0m11:41:16.881472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E18AC180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E18A8EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E1834F30>]}
+[0m11:41:16.881823 [debug] [MainThread]: Flushing usage events
+[0m11:41:16.974090 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:42:57.481554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F9B9A7620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F9C6B6490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F9CBCFC50>]}
+
+
+============================== 11:42:57.485969 | 211e0187-1a45-4584-980c-14f6eaa3fc5f ==============================
+[0m11:42:57.485969 [info ] [MainThread]: Running with dbt=1.10.1
+[0m11:42:57.486942 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt run --select test_view', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:42:57.489995 [info ] [MainThread]: target not specified in profile 'snfk_dbt', using 'default'
+[0m11:42:57.490573 [error] [MainThread]: Encountered an error:
+Runtime Error
+  outputs not specified in profile 'snfk_dbt'
+[0m11:42:57.491801 [debug] [MainThread]: Command `dbt run` failed at 11:42:57.491675 after 0.29 seconds
+[0m11:42:57.492173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F9CC0D480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F9CAB7BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F9CB448D0>]}
+[0m11:42:57.492530 [debug] [MainThread]: Flushing usage events
+[0m11:42:57.846650 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:43:35.985204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB08D07620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB09A06490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB09F1FC50>]}
+
+
+============================== 11:43:35.994590 | 135b0714-7141-474f-b738-f459f7815f6d ==============================
+[0m11:43:35.994590 [info ] [MainThread]: Running with dbt=1.10.1
+[0m11:43:35.996120 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --select test_view', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:43:36.002761 [error] [MainThread]: Encountered an error:
+Runtime Error
+  The profile 'snfk_dbt' does not have a target named 'dev'. The valid target names for this profile are:
+   - type
+   - account
+   - user
+   - authenticator
+   - role
+   - database
+   - warehouse
+   - schema
+   - private_key_path
+   - threads
+[0m11:43:36.004579 [debug] [MainThread]: Command `dbt run` failed at 11:43:36.004325 after 0.28 seconds
+[0m11:43:36.005477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB09F595B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB09E07BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB09E949E0>]}
+[0m11:43:36.006357 [debug] [MainThread]: Flushing usage events
+[0m11:43:36.389715 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:48:14.076435 [error] [MainThread]: Encountered an error:
+
+[0m13:48:14.090957 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\alban.homo\dev\snfk-dbt\.venv\Lib\site-packages\dbt\cli\requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alban.homo\dev\snfk-dbt\.venv\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    ctx.with_resource(track_run(run_command=flags.WHICH))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alban.homo\dev\snfk-dbt\.venv\Lib\site-packages\click\core.py", line 598, in with_resource
+    return self._exit_stack.enter_context(context_manager)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alban.homo\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 530, in enter_context
+    result = _enter(cm)
+  File "C:\Users\alban.homo\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\alban.homo\dev\snfk-dbt\.venv\Lib\site-packages\dbt\tracking.py", line 518, in track_run
+    track_invocation_start(invocation_context)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alban.homo\dev\snfk-dbt\.venv\Lib\site-packages\dbt\tracking.py", line 261, in track_invocation_start
+    get_platform_context(),
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\alban.homo\dev\snfk-dbt\.venv\Lib\site-packages\dbt\tracking.py", line 197, in get_platform_context
+    "platform": platform.platform(),
+                ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\alban.homo\AppData\Local\Programs\Python\Python313\Lib\platform.py", line 1355, in platform
+    rel, vers, csd, ptype = win32_ver(version)
+                            ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alban.homo\AppData\Local\Programs\Python\Python313\Lib\platform.py", line 450, in win32_ver
+    version, csd, ptype, is_client = _win32_ver(version, csd, ptype)
+                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alban.homo\AppData\Local\Programs\Python\Python313\Lib\platform.py", line 391, in _win32_ver
+    (version, product_type, ptype, spmajor, spminor)  = _wmi_query(
+                                                        ~~~~~~~~~~^
+        'OS',
+        ^^^^^
+    ...<4 lines>...
+        'ServicePackMinorVersion',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alban.homo\AppData\Local\Programs\Python\Python313\Lib\platform.py", line 330, in _wmi_query
+    data = _wmi.exec_query("SELECT {} FROM {}".format(
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ",".join(keys),
+        ^^^^^^^^^^^^^^^
+        table,
+        ^^^^^^
+    )).split("\0")
+    ^^
+KeyboardInterrupt
+
+[0m13:48:14.093147 [debug] [MainThread]: Command `dbt run` failed at 13:48:14.093006 after 0.28 seconds
+[0m13:48:18.673742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000111323C7620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000111330C6490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000111335DFC50>]}
+
+
+============================== 13:48:18.684188 | 8dc4fb93-879e-41ad-a89c-28e402d6e197 ==============================
+[0m13:48:18.684188 [info ] [MainThread]: Running with dbt=1.10.1
+[0m13:48:18.685746 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --select test_view', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:48:19.071998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8dc4fb93-879e-41ad-a89c-28e402d6e197', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011132ACEFD0>]}
+[0m13:48:19.117187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8dc4fb93-879e-41ad-a89c-28e402d6e197', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011135575040>]}
+[0m13:48:19.118461 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m13:48:19.337120 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m13:48:19.447063 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m13:48:19.447999 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m13:48:19.448406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '8dc4fb93-879e-41ad-a89c-28e402d6e197', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011135551950>]}
+[0m13:48:20.075890 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'CRM_DEAL_QUOTE_RELEVANT' in the 'models' section of file 'models\DPULSE\schema.yml'
+[0m13:48:20.136864 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.snfk_dbt.unique_CRM_DEAL_QUOTE_RELEVANT_opportunityid.cb346feb1b' (models\DPULSE\schema.yml) depends on a node named 'CRM_DEAL_QUOTE_RELEVANT' in package '' which was not found
+[0m13:48:20.137660 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.snfk_dbt.not_null_CRM_DEAL_QUOTE_RELEVANT_opportunityid.98ccdb2521' (models\DPULSE\schema.yml) depends on a node named 'CRM_DEAL_QUOTE_RELEVANT' in package '' which was not found
+[0m13:48:20.194690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8dc4fb93-879e-41ad-a89c-28e402d6e197', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001113590E120>]}
+[0m13:48:20.242118 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\manifest.json
+[0m13:48:20.262000 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\semantic_manifest.json
+[0m13:48:20.285150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8dc4fb93-879e-41ad-a89c-28e402d6e197', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011135CADFD0>]}
+[0m13:48:20.285603 [info ] [MainThread]: Found 3 models, 477 macros
+[0m13:48:20.286387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8dc4fb93-879e-41ad-a89c-28e402d6e197', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000111358964E0>]}
+[0m13:48:20.287647 [info ] [MainThread]: 
+[0m13:48:20.288189 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m13:48:20.288579 [info ] [MainThread]: 
+[0m13:48:20.289090 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:48:20.290055 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m13:48:20.407317 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m13:48:20.407626 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m13:48:20.407829 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:48:21.649121 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m13:48:21.649683 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:48:21.650130 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m13:48:21.650384 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:48:21.651422 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:48:21.651908 [debug] [MainThread]: Connection 'list_EXPOSE_DEV' was left open.
+[0m13:48:21.652303 [debug] [MainThread]: On list_EXPOSE_DEV: No close available on handle
+[0m13:48:21.652671 [info ] [MainThread]: 
+[0m13:48:21.653228 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.36 seconds (1.36s).
+[0m13:48:21.653969 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "EXPOSE_DEV"
+  Database Error
+    250001 (08001): Failed to connect to DB: URW-URW.snowflakecomputing.com:443. JWT token is invalid. [fff73938-ab3b-4eac-a6a9-f9183850af95]
+[0m13:48:21.655020 [debug] [MainThread]: Command `dbt run` failed at 13:48:21.654823 after 3.21 seconds
+[0m13:48:21.655505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000111333AF650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000111359862B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001113623A6D0>]}
+[0m13:48:21.656064 [debug] [MainThread]: Flushing usage events
+[0m13:48:21.970785 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:55:02.629868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09AD97620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09BA96490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09BFAFC50>]}
+
+
+============================== 13:55:02.634074 | 87499d49-0301-4e02-926f-e745eec4e9f3 ==============================
+[0m13:55:02.634074 [info ] [MainThread]: Running with dbt=1.10.1
+[0m13:55:02.635167 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m13:55:02.973688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '87499d49-0301-4e02-926f-e745eec4e9f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09B49EFD0>]}
+[0m13:55:03.014571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '87499d49-0301-4e02-926f-e745eec4e9f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09DF25040>]}
+[0m13:55:03.015575 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m13:55:03.194367 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m13:55:03.339172 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m13:55:03.339619 [debug] [MainThread]: Partial parsing: added file: snfk_dbt://models\example\schema.yml
+[0m13:55:03.339953 [debug] [MainThread]: Partial parsing: updated file: snfk_dbt://models\DPULSE\schema.yml
+[0m13:55:03.381772 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'crm_quote' in the 'models' section of file 'models\example\schema.yml'
+[0m13:55:03.386347 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'CRM_DEAL_QUOTE_RELEVANT' in the 'models' section of file 'models\DPULSE\schema.yml'
+[0m13:55:03.432526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '87499d49-0301-4e02-926f-e745eec4e9f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09E3EC350>]}
+[0m13:55:03.467075 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\manifest.json
+[0m13:55:03.476794 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\semantic_manifest.json
+[0m13:55:03.494304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '87499d49-0301-4e02-926f-e745eec4e9f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09AD9FA70>]}
+[0m13:55:03.494688 [info ] [MainThread]: Found 3 models, 477 macros
+[0m13:55:03.495492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '87499d49-0301-4e02-926f-e745eec4e9f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09E3ABAF0>]}
+[0m13:55:03.496863 [info ] [MainThread]: 
+[0m13:55:03.497288 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m13:55:03.497664 [info ] [MainThread]: 
+[0m13:55:03.498183 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:55:03.501451 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m13:55:03.509148 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m13:55:03.583986 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m13:55:03.584293 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m13:55:03.584548 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:55:03.584906 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m13:55:03.585175 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m13:55:03.585377 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:55:03.983260 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m13:55:03.983705 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:55:03.984124 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m13:55:03.984580 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:55:03.985504 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m13:55:03.985761 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:55:03.986005 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m13:55:03.986189 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:55:03.986660 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:55:03.986910 [debug] [MainThread]: Connection 'list_EXPOSE_DEV' was left open.
+[0m13:55:03.987117 [debug] [MainThread]: On list_EXPOSE_DEV: No close available on handle
+[0m13:55:03.987289 [debug] [MainThread]: Connection 'list_EXPOSE_DEV' was left open.
+[0m13:55:03.987473 [debug] [MainThread]: On list_EXPOSE_DEV: No close available on handle
+[0m13:55:03.987666 [info ] [MainThread]: 
+[0m13:55:03.988217 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.49 seconds (0.49s).
+[0m13:55:03.988622 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "EXPOSE_DEV"
+  Database Error
+    250001 (08001): Failed to connect to DB: URW-URW.snowflakecomputing.com:443. JWT token is invalid. [c11b7463-3799-42a9-843c-30ae3b830aa5]
+[0m13:55:03.989300 [debug] [MainThread]: Command `dbt run` failed at 13:55:03.989216 after 1.65 seconds
+[0m13:55:03.989543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09E696680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09BD7F650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09E95A510>]}
+[0m13:55:03.989781 [debug] [MainThread]: Flushing usage events
+[0m13:55:04.302672 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:57:31.159819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C6A5074D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C6B1FA490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C6B70BED0>]}
+
+
+============================== 13:57:31.164940 | 05d81f7a-202a-47b0-b1cc-1e20dd2571e3 ==============================
+[0m13:57:31.164940 [info ] [MainThread]: Running with dbt=1.10.1
+[0m13:57:31.165742 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt ', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:57:31.282791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '05d81f7a-202a-47b0-b1cc-1e20dd2571e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C6AC02D70>]}
+[0m13:57:31.300112 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:57:31.301838 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:57:31.303869 [debug] [MainThread]: Command `cli deps` succeeded at 13:57:31.303689 after 0.38 seconds
+[0m13:57:31.304236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C6B7996A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C6B7986B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C6B7A1150>]}
+[0m13:57:31.304778 [debug] [MainThread]: Flushing usage events
+[0m13:57:31.639225 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:03:40.386421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC61537620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC62246490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC6275FC50>]}
+
+
+============================== 14:03:40.392967 | a5b0c901-fcf8-4708-afa2-90825be2113e ==============================
+[0m14:03:40.392967 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:03:40.394101 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:03:40.731679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a5b0c901-fcf8-4708-afa2-90825be2113e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC61C4EFD0>]}
+[0m14:03:40.772462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a5b0c901-fcf8-4708-afa2-90825be2113e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC646B5040>]}
+[0m14:03:40.773548 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m14:03:40.980686 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m14:03:41.085786 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading snfk_dbt: DPULSE\schema.yml - Runtime Error
+    Syntax error near line 9
+    ------------------------------
+    6  |     comment: "SGE 202506: most sifgnificant view for each step of the deal for PBI"
+    7  |     columns:
+    8  |         name: opportunityid
+    9  | 	      name: OPPORTUNITYID
+    10 | 	      name: ID
+    11 | 	      name: QUOTEID
+    12 | 	      name: FACT_PROG
+    
+    Raw Error:
+    ------------------------------
+    while scanning a plain scalar
+      in "<unicode string>", line 8, column 15
+    found a tab character that violates indentation
+      in "<unicode string>", line 9, column 1
+[0m14:03:41.086911 [debug] [MainThread]: Command `dbt run` failed at 14:03:41.086802 after 0.93 seconds
+[0m14:03:41.087191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC64690F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC64691250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC64A6C9B0>]}
+[0m14:03:41.087440 [debug] [MainThread]: Flushing usage events
+[0m14:03:41.154781 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:08:02.225697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B3AD67620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B3BA76490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B3BF8FC50>]}
+
+
+============================== 14:08:02.228923 | dadfe79d-8199-4e97-aca5-24f5df6ff207 ==============================
+[0m14:08:02.228923 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:08:02.229644 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:08:02.577625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dadfe79d-8199-4e97-aca5-24f5df6ff207', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B3B47EFD0>]}
+[0m14:08:02.619043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dadfe79d-8199-4e97-aca5-24f5df6ff207', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B3DFB5040>]}
+[0m14:08:02.619942 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m14:08:02.781172 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m14:08:02.888656 [warn ] [MainThread]: [[33mWARNING[0m][DuplicateYAMLKeysDeprecation]: Deprecated functionality
+Duplicate key '      - name' in "<unicode string>", line 11, column 1 in file
+`models\DPULSE\schema.yml`
+[0m14:08:02.889413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'dadfe79d-8199-4e97-aca5-24f5df6ff207', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B3DF91150>]}
+[0m14:08:02.890279 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The schema file at models\DPULSE\schema.yml is invalid because the value of 'models' is not a list
+[0m14:08:02.890987 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- DuplicateYAMLKeysDeprecation: 16 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:08:02.891836 [debug] [MainThread]: Command `dbt run` failed at 14:08:02.891742 after 0.92 seconds
+[0m14:08:02.892101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B3E370C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B3E370AA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B3BF47E70>]}
+[0m14:08:02.892334 [debug] [MainThread]: Flushing usage events
+[0m14:08:03.207379 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:11:25.978880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214DF4B7620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214E01B6490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214E06CFC50>]}
+
+
+============================== 14:11:25.986055 | 502d5882-5bd2-4ec0-bfe4-2d0be8f1d923 ==============================
+[0m14:11:25.986055 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:11:25.987490 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:11:26.328589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '502d5882-5bd2-4ec0-bfe4-2d0be8f1d923', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214DFBBEFD0>]}
+[0m14:11:26.369444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '502d5882-5bd2-4ec0-bfe4-2d0be8f1d923', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214E2605040>]}
+[0m14:11:26.370523 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m14:11:26.544958 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m14:11:26.681255 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:11:26.681555 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:11:26.696730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '502d5882-5bd2-4ec0-bfe4-2d0be8f1d923', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214E25E1750>]}
+[0m14:11:26.736203 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\manifest.json
+[0m14:11:26.747983 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\semantic_manifest.json
+[0m14:11:26.765643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '502d5882-5bd2-4ec0-bfe4-2d0be8f1d923', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214DF4BFA70>]}
+[0m14:11:26.766094 [info ] [MainThread]: Found 1 model, 477 macros
+[0m14:11:26.766901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '502d5882-5bd2-4ec0-bfe4-2d0be8f1d923', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214E26727B0>]}
+[0m14:11:26.768062 [info ] [MainThread]: 
+[0m14:11:26.768825 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m14:11:26.769360 [info ] [MainThread]: 
+[0m14:11:26.769900 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:11:26.771095 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m14:11:26.876979 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m14:11:26.877277 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m14:11:26.877470 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:11:27.209565 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m14:11:27.210198 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:11:27.210754 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m14:11:27.211135 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:11:27.212440 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:11:27.212867 [debug] [MainThread]: Connection 'list_EXPOSE_DEV' was left open.
+[0m14:11:27.213163 [debug] [MainThread]: On list_EXPOSE_DEV: No close available on handle
+[0m14:11:27.213435 [info ] [MainThread]: 
+[0m14:11:27.214490 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.44 seconds (0.44s).
+[0m14:11:27.215655 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "EXPOSE_DEV"
+  Database Error
+    250001 (08001): Failed to connect to DB: URW-URW.snowflakecomputing.com:443. JWT token is invalid. [3ce8d01f-33c1-45dd-9abf-dc33bc74676d]
+[0m14:11:27.217020 [debug] [MainThread]: Command `dbt run` failed at 14:11:27.216881 after 1.51 seconds
+[0m14:11:27.217497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214E209E8F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214E049B650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214E30BCA10>]}
+[0m14:11:27.217886 [debug] [MainThread]: Flushing usage events
+[0m14:11:27.604304 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:33:58.733537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E8247620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E8F56490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E946FC50>]}
+
+
+============================== 14:33:58.737103 | 157951c1-5d70-41fa-8c2b-27b2d0e76094 ==============================
+[0m14:33:58.737103 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:33:58.737940 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:33:59.086641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '157951c1-5d70-41fa-8c2b-27b2d0e76094', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E895EFD0>]}
+[0m14:33:59.128419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '157951c1-5d70-41fa-8c2b-27b2d0e76094', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7EB415040>]}
+[0m14:33:59.129426 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m14:33:59.330853 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m14:33:59.472126 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:33:59.472441 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:33:59.487778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '157951c1-5d70-41fa-8c2b-27b2d0e76094', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7EB3F1750>]}
+[0m14:33:59.523464 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\manifest.json
+[0m14:33:59.534245 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\semantic_manifest.json
+[0m14:33:59.551630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '157951c1-5d70-41fa-8c2b-27b2d0e76094', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E824FA70>]}
+[0m14:33:59.552048 [info ] [MainThread]: Found 1 model, 477 macros
+[0m14:33:59.552627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '157951c1-5d70-41fa-8c2b-27b2d0e76094', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7EB4867B0>]}
+[0m14:33:59.553802 [info ] [MainThread]: 
+[0m14:33:59.554434 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m14:33:59.554852 [info ] [MainThread]: 
+[0m14:33:59.555417 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:33:59.556598 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m14:33:59.663773 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m14:33:59.664118 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m14:33:59.664331 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:33:59.980468 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m14:33:59.980864 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:33:59.981134 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m14:33:59.981323 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:33:59.984446 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:33:59.984836 [debug] [MainThread]: Connection 'list_EXPOSE_DEV' was left open.
+[0m14:33:59.985072 [debug] [MainThread]: On list_EXPOSE_DEV: No close available on handle
+[0m14:33:59.985284 [info ] [MainThread]: 
+[0m14:33:59.986560 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.43 seconds (0.43s).
+[0m14:33:59.987424 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "EXPOSE_DEV"
+  Database Error
+    250001 (08001): Failed to connect to DB: URW-URW.snowflakecomputing.com:443. JWT token is invalid. [ebbcea6a-f441-41b9-ad2a-5e8cc4dc9cf1]
+[0m14:33:59.989138 [debug] [MainThread]: Command `dbt run` failed at 14:33:59.988839 after 1.54 seconds
+[0m14:33:59.989655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7EAEAE8F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E923F650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7EBEC8A10>]}
+[0m14:33:59.990069 [debug] [MainThread]: Flushing usage events
+[0m14:34:00.320642 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:35:31.925865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002131DE474D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002131EB3A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002131F04FED0>]}
+
+
+============================== 14:35:31.933535 | c458b317-351f-4aa0-b23a-d30363cccf79 ==============================
+[0m14:35:31.933535 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:35:31.934517 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:35:32.036517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c458b317-351f-4aa0-b23a-d30363cccf79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002131E53ED70>]}
+[0m14:35:32.060180 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m14:35:32.062316 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m14:35:32.063268 [debug] [MainThread]: Command `cli deps` succeeded at 14:35:32.063032 after 0.41 seconds
+[0m14:35:32.063778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002131F0D9480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002131F0D87C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002131F0E1150>]}
+[0m14:35:32.064295 [debug] [MainThread]: Flushing usage events
+[0m14:35:32.392586 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:35:42.550246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227BFA57620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227C0756490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227C0C6FC50>]}
+
+
+============================== 14:35:42.558231 | 22a0ab49-3ef0-4117-a309-91d6f852ea54 ==============================
+[0m14:35:42.558231 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:35:42.559822 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:35:42.920130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '22a0ab49-3ef0-4117-a309-91d6f852ea54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227C015EFD0>]}
+[0m14:35:42.961313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '22a0ab49-3ef0-4117-a309-91d6f852ea54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227C2B55040>]}
+[0m14:35:42.962320 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m14:35:43.134420 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m14:35:43.306517 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:35:43.306844 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:35:43.322595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '22a0ab49-3ef0-4117-a309-91d6f852ea54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227C2B31750>]}
+[0m14:35:43.366046 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\manifest.json
+[0m14:35:43.377474 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\semantic_manifest.json
+[0m14:35:43.395528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '22a0ab49-3ef0-4117-a309-91d6f852ea54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227BFA5FA70>]}
+[0m14:35:43.395954 [info ] [MainThread]: Found 1 model, 477 macros
+[0m14:35:43.396667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '22a0ab49-3ef0-4117-a309-91d6f852ea54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227C2BC27B0>]}
+[0m14:35:43.397892 [info ] [MainThread]: 
+[0m14:35:43.398340 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m14:35:43.398639 [info ] [MainThread]: 
+[0m14:35:43.399064 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:35:43.400223 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m14:35:43.511709 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m14:35:43.512071 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m14:35:43.512319 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:35:43.884018 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m14:35:43.884665 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:35:43.885206 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m14:35:43.885649 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:35:43.887100 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:35:43.887548 [debug] [MainThread]: Connection 'list_EXPOSE_DEV' was left open.
+[0m14:35:43.887872 [debug] [MainThread]: On list_EXPOSE_DEV: No close available on handle
+[0m14:35:43.888158 [info ] [MainThread]: 
+[0m14:35:43.888987 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.49 seconds (0.49s).
+[0m14:35:43.890042 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "EXPOSE_DEV"
+  Database Error
+    250001 (08001): Failed to connect to DB: URW-URW.snowflakecomputing.com:443. JWT token is invalid. [58a398b3-cc60-46f6-a74f-1a342d259a99]
+[0m14:35:43.891643 [debug] [MainThread]: Command `dbt run` failed at 14:35:43.891455 after 1.61 seconds
+[0m14:35:43.892186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227C25EE8F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227C0A3B650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227C362CA10>]}
+[0m14:35:43.892706 [debug] [MainThread]: Flushing usage events
+[0m14:35:43.937268 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:36:57.843843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222EF617620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222F0316490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222F082FC50>]}
+
+
+============================== 14:36:57.847379 | 7224aa70-4acb-48e4-83a6-41a9266ed720 ==============================
+[0m14:36:57.847379 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:36:57.848225 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m14:36:58.184608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7224aa70-4acb-48e4-83a6-41a9266ed720', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222EFD1EFD0>]}
+[0m14:36:58.227327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7224aa70-4acb-48e4-83a6-41a9266ed720', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222F2815040>]}
+[0m14:36:58.228356 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m14:36:58.411721 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m14:36:58.549406 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:36:58.549722 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:36:58.564549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7224aa70-4acb-48e4-83a6-41a9266ed720', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222F27F1750>]}
+[0m14:36:58.598814 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\manifest.json
+[0m14:36:58.609198 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\semantic_manifest.json
+[0m14:36:58.626230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7224aa70-4acb-48e4-83a6-41a9266ed720', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222EF61FA70>]}
+[0m14:36:58.626992 [info ] [MainThread]: Found 1 model, 477 macros
+[0m14:36:58.627766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7224aa70-4acb-48e4-83a6-41a9266ed720', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222F28827B0>]}
+[0m14:36:58.628945 [info ] [MainThread]: 
+[0m14:36:58.629572 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m14:36:58.630058 [info ] [MainThread]: 
+[0m14:36:58.630670 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:36:58.632036 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m14:36:58.721508 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m14:36:58.721837 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m14:36:58.722035 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:36:59.014922 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m14:36:59.015496 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:36:59.016230 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m14:36:59.016753 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:36:59.018520 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:36:59.019261 [debug] [MainThread]: Connection 'list_EXPOSE_DEV' was left open.
+[0m14:36:59.019885 [debug] [MainThread]: On list_EXPOSE_DEV: No close available on handle
+[0m14:36:59.020400 [info ] [MainThread]: 
+[0m14:36:59.021874 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.39 seconds (0.39s).
+[0m14:36:59.023615 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "EXPOSE_DEV"
+  Database Error
+    250001 (08001): Failed to connect to DB: URW-URW.snowflakecomputing.com:443. JWT token is invalid. [f89cb55a-72fd-48ce-b8bf-7cd2cdc5183d]
+[0m14:36:59.025807 [debug] [MainThread]: Command `dbt run` failed at 14:36:59.025664 after 1.47 seconds
+[0m14:36:59.026101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222F22AE8F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222F05FF650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222F32CCA10>]}
+[0m14:36:59.026421 [debug] [MainThread]: Flushing usage events
+[0m14:36:59.360159 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:39:58.894956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E21C7620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E2EC6490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E33DFC50>]}
+
+
+============================== 14:39:58.898973 | 19ebb966-51cb-45f9-98e9-09f35ac53a2d ==============================
+[0m14:39:58.898973 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:39:58.900013 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:39:59.258971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '19ebb966-51cb-45f9-98e9-09f35ac53a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E28CEFD0>]}
+[0m14:39:59.299602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '19ebb966-51cb-45f9-98e9-09f35ac53a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E5325040>]}
+[0m14:39:59.300558 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m14:39:59.466687 [debug] [MainThread]: checksum: 2c026f85d539c10c69b093157526ce33d0bf5533489eafb07fe5172434ec7740, vars: {}, profile: , target: , version: 1.10.1
+[0m14:39:59.614717 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:39:59.615060 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:39:59.630427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '19ebb966-51cb-45f9-98e9-09f35ac53a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E5301750>]}
+[0m14:39:59.665575 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\manifest.json
+[0m14:39:59.675602 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\target\semantic_manifest.json
+[0m14:39:59.692748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '19ebb966-51cb-45f9-98e9-09f35ac53a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E21CFA70>]}
+[0m14:39:59.693219 [info ] [MainThread]: Found 1 model, 477 macros
+[0m14:39:59.693946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '19ebb966-51cb-45f9-98e9-09f35ac53a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E5392890>]}
+[0m14:39:59.695154 [info ] [MainThread]: 
+[0m14:39:59.695657 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m14:39:59.696073 [info ] [MainThread]: 
+[0m14:39:59.696561 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:39:59.697969 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m14:39:59.787896 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m14:39:59.788205 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m14:39:59.788408 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:40:00.152746 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.1", "profile_name": "snfk_dbt", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m14:40:00.153316 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:40:00.153791 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m14:40:00.154124 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:40:00.155674 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:40:00.156251 [debug] [MainThread]: Connection 'list_EXPOSE_DEV' was left open.
+[0m14:40:00.156714 [debug] [MainThread]: On list_EXPOSE_DEV: No close available on handle
+[0m14:40:00.157214 [info ] [MainThread]: 
+[0m14:40:00.158369 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.46 seconds (0.46s).
+[0m14:40:00.159537 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "EXPOSE_DEV"
+  Database Error
+    250001 (08001): Failed to connect to DB: URW-URW.snowflakecomputing.com:443. JWT token is invalid. [421e9e31-e261-4679-a95d-8d154b7794c5]
+[0m14:40:00.160866 [debug] [MainThread]: Command `dbt run` failed at 14:40:00.160718 after 1.54 seconds
+[0m14:40:00.161287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E4DBA9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E31AF650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E5DD8A10>]}
+[0m14:40:00.161679 [debug] [MainThread]: Flushing usage events
+[0m14:40:00.513116 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:40:29.220099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C87C17620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C88926490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C88E3FC50>]}
+
+
+============================== 14:40:29.224089 | 8e6d6d84-603c-45bd-ab9e-9cd40718d0e1 ==============================
+[0m14:40:29.224089 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:40:29.224999 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:40:29.320689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8e6d6d84-603c-45bd-ab9e-9cd40718d0e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C8832EFD0>]}
+[0m14:40:29.336144 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m14:40:29.338456 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m14:40:29.339603 [debug] [MainThread]: Command `dbt deps` succeeded at 14:40:29.339481 after 0.36 seconds
+[0m14:40:29.339892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C88DB59D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C88DB49E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C88DD1450>]}
+[0m14:40:29.340167 [debug] [MainThread]: Flushing usage events
+[0m14:40:29.463511 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:40:45.177563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BEB5B7620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BEC2B6490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BEC7CFC50>]}
+
+
+============================== 14:40:45.180768 | 56218e3f-8ee3-4b83-a515-373acc53d6e8 ==============================
+[0m14:40:45.180768 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:40:45.181766 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:40:45.199373 [info ] [MainThread]: dbt version: 1.10.1
+[0m14:40:45.200185 [info ] [MainThread]: python version: 3.13.3
+[0m14:40:45.200695 [info ] [MainThread]: python path: C:\Users\alban.homo\dev\snfk-dbt\.venv\scripts\python.exe
+[0m14:40:45.201164 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m14:40:45.519723 [info ] [MainThread]: Using profiles dir at C:\Users\alban.homo\.dbt
+[0m14:40:45.520656 [info ] [MainThread]: Using profiles.yml file at C:\Users\alban.homo\.dbt\profiles.yml
+[0m14:40:45.521338 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\alban.homo\dev\snfk-dbt\snfk_dbt\dbt_project.yml
+[0m14:40:45.522530 [info ] [MainThread]: adapter type: snowflake
+[0m14:40:45.523241 [info ] [MainThread]: adapter version: 1.9.4
+[0m14:40:45.663077 [info ] [MainThread]: Configuration:
+[0m14:40:45.664323 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:40:45.665558 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:40:45.666887 [info ] [MainThread]: Required dependencies:
+[0m14:40:45.668044 [debug] [MainThread]: Executing "git --help"
+[0m14:40:45.796257 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:40:45.796769 [debug] [MainThread]: STDERR: "b''"
+[0m14:40:45.797152 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:40:45.797769 [info ] [MainThread]: Connection:
+[0m14:40:45.798257 [info ] [MainThread]:   account: URW-URW
+[0m14:40:45.798684 [info ] [MainThread]:   user: ALBAN.HOMO
+[0m14:40:45.799054 [info ] [MainThread]:   database: EXPOSE_DEV
+[0m14:40:45.799409 [info ] [MainThread]:   warehouse: EUGENERIC
+[0m14:40:45.799892 [info ] [MainThread]:   role: RUSER_ALBANHOMO
+[0m14:40:45.800344 [info ] [MainThread]:   schema: DPULSE
+[0m14:40:45.800784 [info ] [MainThread]:   authenticator: snowflake
+[0m14:40:45.801189 [info ] [MainThread]:   oauth_client_id: None
+[0m14:40:45.801699 [info ] [MainThread]:   query_tag: None
+[0m14:40:45.802130 [info ] [MainThread]:   client_session_keep_alive: False
+[0m14:40:45.802635 [info ] [MainThread]:   host: None
+[0m14:40:45.803191 [info ] [MainThread]:   port: None
+[0m14:40:45.803744 [info ] [MainThread]:   proxy_host: None
+[0m14:40:45.804271 [info ] [MainThread]:   proxy_port: None
+[0m14:40:45.805089 [info ] [MainThread]:   protocol: None
+[0m14:40:45.805756 [info ] [MainThread]:   connect_retries: 1
+[0m14:40:45.806453 [info ] [MainThread]:   connect_timeout: None
+[0m14:40:45.806988 [info ] [MainThread]:   retry_on_database_errors: False
+[0m14:40:45.807454 [info ] [MainThread]:   retry_all: False
+[0m14:40:45.808035 [info ] [MainThread]:   insecure_mode: False
+[0m14:40:45.808483 [info ] [MainThread]:   reuse_connections: True
+[0m14:40:45.809270 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m14:40:45.989562 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m14:40:46.048990 [debug] [MainThread]: Using snowflake connection "debug"
+[0m14:40:46.049289 [debug] [MainThread]: On debug: select 1 as id
+[0m14:40:46.049479 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:40:46.501593 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m14:40:46.502233 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m14:40:46.502756 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:40:46.503668 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:40:46.504487 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001 (08001): Failed to connect to DB: URW-URW.snowflakecomputing.com:443. JWT token is invalid. [3eb809bf-6263-40c9-87b4-9baea3cbe519]
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:40:46.505869 [debug] [MainThread]: Command `dbt debug` failed at 14:40:46.505662 after 1.54 seconds
+[0m14:40:46.506363 [debug] [MainThread]: Connection 'debug' was left open.
+[0m14:40:46.506768 [debug] [MainThread]: On debug: No close available on handle
+[0m14:40:46.507176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BEED4C180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BEEE35FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BEE72BF00>]}
+[0m14:40:46.507694 [debug] [MainThread]: Flushing usage events
+[0m14:40:46.617787 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:30:56.209120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CCC3674D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CCD04A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CCD55FED0>]}
+
+
+============================== 08:30:56.221789 | b4657f64-5c00-4339-beca-902291a65241 ==============================
+[0m08:30:56.221789 [info ] [MainThread]: Running with dbt=1.10.1
+[0m08:30:56.222546 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk-dbt\\snfk_dbt\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt ', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:30:56.474168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b4657f64-5c00-4339-beca-902291a65241', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CCCA5ED70>]}
+[0m08:30:56.539186 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:30:56.544850 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m08:30:56.547426 [debug] [MainThread]: Command `cli deps` succeeded at 08:30:56.547162 after 0.82 seconds
+[0m08:30:56.547967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CCD5E96A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CCD5E86B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CCD5F1150>]}
+[0m08:30:56.548442 [debug] [MainThread]: Flushing usage events
+[0m08:30:57.034408 [debug] [MainThread]: An error was encountered while trying to flush usage events

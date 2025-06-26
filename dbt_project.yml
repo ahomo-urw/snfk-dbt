@@ -1,12 +1,12 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: "snfk_dbt"
+name: "snowflake"
 version: "1.0.0"
 
 # This setting configures which "profile" dbt uses for this project.
 profile: "snfk_dbt"
-
+#profile: "albinus"
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
@@ -29,15 +29,15 @@ clean-targets: # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   snfk_dbt:
-    example:
+    - example:
       +database: EXPOSE_DEV
       +schema: DPULSE
       +materialized: view
-    DPERFMGT:
-      +database: "{{ 'EXPOSE_DEV' if target.name == 'dev' else 'EXPOSE' }}"
-      +schema: DPERFMGT
-      +materialized: view
-    DPULSE:
-      +database: "{{ 'EXPOSE_DEV' if target.name == 'dev' else 'EXPOSE' }}"
-      +schema: DPULSE
-      +materialized: view
+    # - DPERFMGT:
+    #   +database: "{{ 'EXPOSE_DEV' if target.name == 'dev' else 'EXPOSE' }}"
+    #   +schema: DPERFMGT
+    #   +materialized: view
+    # - DPULSE:
+    #   +database: "{{ 'EXPOSE_DEV' if target.name == 'dev' else 'EXPOSE' }}"
+    #   +schema: DPULSE
+    #   +materialized: view
