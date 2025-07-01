@@ -5,7 +5,7 @@ name: "snowflake"
 version: "1.0.0"
 
 # This setting configures which "profile" dbt uses for this project.
-profile: "snfk_dbt"
+profile: "snfk_urw"
 #profile: "albinus"
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -28,16 +28,16 @@ clean-targets: # directories to be removed by `dbt clean`
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
-  snfk_dbt:
+  snfk_urw:
     - example:
       +database: EXPOSE_DEV
       +schema: DPULSE
       +materialized: view
-    # - DPERFMGT:
-    #   +database: "{{ 'EXPOSE_DEV' if target.name == 'dev' else 'EXPOSE' }}"
-    #   +schema: DPERFMGT
-    #   +materialized: view
-    # - DPULSE:
-    #   +database: "{{ 'EXPOSE_DEV' if target.name == 'dev' else 'EXPOSE' }}"
-    #   +schema: DPULSE
-    #   +materialized: view
+    - DPERFMGT:
+      +database: "{{ 'EXPOSE_DEV' if target.name == 'dev' else 'EXPOSE' }}"
+      +schema: DPERFMGT
+      +materialized: view
+    - DPULSE:
+      +database: "{{ 'EXPOSE_DEV' if target.name == 'dev' else 'EXPOSE' }}"
+      +schema: DPULSE
+      +materialized: view
