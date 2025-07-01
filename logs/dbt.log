@@ -1619,3 +1619,322 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m08:30:56.547967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CCD5E96A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CCD5E86B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CCD5F1150>]}
 [0m08:30:56.548442 [debug] [MainThread]: Flushing usage events
 [0m08:30:57.034408 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:06:04.983546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2882F230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB29C03D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB29C039D0>]}
+
+
+============================== 17:06:04.988663 | df27b7c5-6341-4cd7-9829-fb183884aa25 ==============================
+[0m17:06:04.988663 [info ] [MainThread]: Running with dbt=1.10.2
+[0m17:06:04.989551 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\alban.homo\\dev\\snfk_dbt\\snfk_urw\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:06:05.399551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'df27b7c5-6341-4cd7-9829-fb183884aa25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB28F23100>]}
+[0m17:06:05.441091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'df27b7c5-6341-4cd7-9829-fb183884aa25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2BBD1040>]}
+[0m17:06:05.442123 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m17:06:05.635502 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m17:06:05.741093 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:06:05.741486 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:06:05.765461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'df27b7c5-6341-4cd7-9829-fb183884aa25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2C051050>]}
+[0m17:06:05.810652 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk_dbt\snfk_urw\target\manifest.json
+[0m17:06:05.813982 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk_dbt\snfk_urw\target\semantic_manifest.json
+[0m17:06:05.834979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'df27b7c5-6341-4cd7-9829-fb183884aa25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2BBCBE30>]}
+[0m17:06:05.835423 [info ] [MainThread]: Found 4 models, 477 macros
+[0m17:06:05.836032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df27b7c5-6341-4cd7-9829-fb183884aa25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2BC1EA50>]}
+[0m17:06:05.837384 [info ] [MainThread]: 
+[0m17:06:05.837853 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m17:06:05.838239 [info ] [MainThread]: 
+[0m17:06:05.838895 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:06:05.842599 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV'
+[0m17:06:05.940113 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV"
+[0m17:06:05.940446 [debug] [ThreadPool]: On list_EXPOSE_DEV: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "snfk_urw", "target_name": "dev", "connection_name": "list_EXPOSE_DEV"} */
+show terse schemas in database EXPOSE_DEV
+    limit 10000
+[0m17:06:05.940681 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:06:06.467919 [debug] [ThreadPool]: SQL status: SUCCESS 54 in 0.527 seconds
+[0m17:06:06.475633 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EXPOSE_DEV_DPULSE'
+[0m17:06:06.486650 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV_DPULSE"
+[0m17:06:06.487043 [debug] [ThreadPool]: On list_EXPOSE_DEV_DPULSE: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "snfk_urw", "target_name": "dev", "connection_name": "list_EXPOSE_DEV_DPULSE"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m17:06:06.487255 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:06:06.812267 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.325 seconds
+[0m17:06:06.818343 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV_DPULSE"
+[0m17:06:06.818813 [debug] [ThreadPool]: On list_EXPOSE_DEV_DPULSE: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "snfk_urw", "target_name": "dev", "connection_name": "list_EXPOSE_DEV_DPULSE"} */
+show objects in EXPOSE_DEV.DPULSE
+    limit 10000
+    
+;
+[0m17:06:07.208129 [debug] [ThreadPool]: SQL status: SUCCESS 98 in 0.389 seconds
+[0m17:06:07.212535 [debug] [ThreadPool]: Using snowflake connection "list_EXPOSE_DEV_DPULSE"
+[0m17:06:07.213114 [debug] [ThreadPool]: On list_EXPOSE_DEV_DPULSE: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "snfk_urw", "target_name": "dev", "connection_name": "list_EXPOSE_DEV_DPULSE"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m17:06:07.285439 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.072 seconds
+[0m17:06:07.297856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df27b7c5-6341-4cd7-9829-fb183884aa25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2C11FBA0>]}
+[0m17:06:07.357290 [debug] [Thread-1 (]: Began running node model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY
+[0m17:06:07.357709 [debug] [Thread-2 (]: Began running node model.snowflake.crm_deal_quote_relevant
+[0m17:06:07.358039 [debug] [Thread-3 (]: Began running node model.snowflake.crm_test_dbt
+[0m17:06:07.358701 [debug] [Thread-4 (]: Began running node model.snowflake.test_view
+[0m17:06:07.358437 [info ] [Thread-1 (]: 1 of 4 START sql view model DPULSE.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY  [RUN]
+[0m17:06:07.359425 [info ] [Thread-2 (]: 2 of 4 START sql view model DPULSE.crm_deal_quote_relevant ..................... [RUN]
+[0m17:06:07.360722 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY'
+[0m17:06:07.359900 [info ] [Thread-3 (]: 3 of 4 START sql view model DPULSE.crm_test_dbt ................................ [RUN]
+[0m17:06:07.361477 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.snowflake.crm_deal_quote_relevant'
+[0m17:06:07.360319 [info ] [Thread-4 (]: 4 of 4 START sql view model DPULSE.test_view ................................... [RUN]
+[0m17:06:07.362027 [debug] [Thread-1 (]: Began compiling node model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY
+[0m17:06:07.362656 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.snowflake.crm_test_dbt'
+[0m17:06:07.362978 [debug] [Thread-2 (]: Began compiling node model.snowflake.crm_deal_quote_relevant
+[0m17:06:07.363330 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.snowflake.test_view'
+[0m17:06:07.370294 [debug] [Thread-1 (]: Writing injected SQL for node "model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY"
+[0m17:06:07.370766 [debug] [Thread-3 (]: Began compiling node model.snowflake.crm_test_dbt
+[0m17:06:07.375796 [debug] [Thread-2 (]: Writing injected SQL for node "model.snowflake.crm_deal_quote_relevant"
+[0m17:06:07.376296 [debug] [Thread-4 (]: Began compiling node model.snowflake.test_view
+[0m17:06:07.377604 [debug] [Thread-3 (]: Writing injected SQL for node "model.snowflake.crm_test_dbt"
+[0m17:06:07.380850 [debug] [Thread-4 (]: Writing injected SQL for node "model.snowflake.test_view"
+[0m17:06:07.383594 [debug] [Thread-1 (]: Began executing node model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY
+[0m17:06:07.396455 [debug] [Thread-2 (]: Began executing node model.snowflake.crm_deal_quote_relevant
+[0m17:06:07.407601 [debug] [Thread-1 (]: Writing runtime sql for node "model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY"
+[0m17:06:07.409722 [debug] [Thread-2 (]: Writing runtime sql for node "model.snowflake.crm_deal_quote_relevant"
+[0m17:06:07.411339 [debug] [Thread-4 (]: Began executing node model.snowflake.test_view
+[0m17:06:07.410877 [debug] [Thread-3 (]: Began executing node model.snowflake.crm_test_dbt
+[0m17:06:07.414609 [debug] [Thread-2 (]: Using snowflake connection "model.snowflake.crm_deal_quote_relevant"
+[0m17:06:07.416861 [debug] [Thread-4 (]: Writing runtime sql for node "model.snowflake.test_view"
+[0m17:06:07.417853 [debug] [Thread-1 (]: Using snowflake connection "model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY"
+[0m17:06:07.419878 [debug] [Thread-3 (]: Writing runtime sql for node "model.snowflake.crm_test_dbt"
+[0m17:06:07.420397 [debug] [Thread-2 (]: On model.snowflake.crm_deal_quote_relevant: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "snfk_urw", "target_name": "dev", "node_id": "model.snowflake.crm_deal_quote_relevant"} */
+create or replace   view EXPOSE_DEV.DPULSE.crm_deal_quote_relevant
+  
+   as (
+    
+
+WITH LT_10 AS (
+	SELECT 
+		d.opportunityid, 
+		d.id,
+		q.quoteid,
+		'10' fact_prog,
+		q.name,
+		q.createdon quote_createon,
+		CASE WHEN MAX(q.createdon) OVER (PARTITION BY d.opportunityid) = q.createdon 
+			THEN true 
+			ELSE false 
+		END filter,
+		TO_CHAR(quote_createon,'YYYYMM') YM_START,
+		NVL(TO_CHAR(datefinancialproposalagreed,'YYYYMM'),'999912') YM_END
+		/*,progressiontech, datefinancialproposalagreed, datevalidated, datelegalagreement, d.createdon deal_createon, landlordsignaturedate, signaturedate,*/
+	FROM finops.dwh.crm_deal d 
+	LEFT JOIN finops.dwh.crm_quote q ON q.opportunityid = d.opportunityid
+	WHERE --d.opportunityid='8602e810-0cb6-ee11-a569-000d3ab4b3e6' --'f1b05667-7d41-4bbc-9925-58e99d03ec9c' 
+    --and 
+    q.typecode ='809020000' --quote fin
+    AND 
+		(q.createdon< DATEADD(minute, 59, datefinancialproposalagreed ) 
+		OR datefinancialproposalagreed IS NULL)
+	QUALIFY filter = true
+)
+, LT_50 AS (
+	SELECT 
+		d.opportunityid, 
+		d.id,
+		q.quoteid,
+		'50' fact_prog,
+		q.name,
+		q.createdon quote_createon,
+		CASE WHEN min(q.createdon) OVER (PARTITION BY d.opportunityid) = q.createdon
+			THEN true 
+			ELSE false 
+		END filter,
+		TO_CHAR(quote_createon,'YYYYMM') YM_START,
+		NVL(TO_CHAR(datevalidated,'YYYYMM'),'999912') YM_END
+		/*,progressiontech, datefinancialproposalagreed, datevalidated, datelegalagreement, d.createdon deal_createon, landlordsignaturedate, signaturedate,*/
+	FROM finops.dwh.crm_deal d 
+	LEFT JOIN finops.dwh.crm_quote q ON q.opportunityid = d.opportunityid
+	WHERE-- d.opportunityid='f1b05667-7d41-4bbc-9925-58e99d03ec9c'--'5b6b7053-7c73-4c7c-bd57-3fbf65bf46e9' AND
+		(q.createdon< DATEADD(minute, 59, datevalidated)
+		OR datevalidated IS NULL)
+		AND progressiontech >= 50
+		AND statereasoncode IN ('809020006','809020008') -- premiere quote valié
+        and  q.typecode !='809020000' -- pas quote fin quote fin
+	QUALIFY filter = true
+)
+, LT_70 AS (
+	SELECT 
+		d.opportunityid, 
+		d.id,
+		q.quoteid,
+		'70' fact_prog,
+		q.name,
+		q.createdon quote_createon,
+		CASE WHEN max(q.createdon) OVER (PARTITION BY d.opportunityid) = q.createdon 
+			THEN true 
+			ELSE false 
+		END filter,
+		TO_CHAR(quote_createon,'YYYYMM') YM_START,
+		NVL(TO_CHAR(datelegalagreement,'YYYYMM'),'999912') YM_END
+		/*,progressiontech, datefinancialproposalagreed, datevalidated, datelegalagreement, d.createdon deal_createon, landlordsignaturedate, signaturedate,*/
+	FROM finops.dwh.crm_deal d 
+	LEFT JOIN finops.dwh.crm_quote q ON q.opportunityid = d.opportunityid
+	WHERE --d.opportunityid='f1b05667-7d41-4bbc-9925-58e99d03ec9c'--'5b6b7053-7c73-4c7c-bd57-3fbf65bf46e9' AND
+		(q.createdon< DATEADD(minute, 59, datelegalagreement)
+		OR datelegalagreement IS NULL)
+		AND progressiontech >= 70
+           and  q.typecode !='809020000' -- pas quote fin quote fin
+	QUALIFY filter = true
+)
+, LT_90 AS (
+	SELECT 
+		d.opportunityid, 
+		d.id,
+		q.quoteid,
+		'90' fact_prog,
+		q.name,
+		q.createdon quote_createon,
+		CASE WHEN max(q.createdon) OVER (PARTITION BY d.opportunityid) = q.createdon 
+			THEN true 
+			ELSE false 
+		END filter,
+		TO_CHAR(quote_createon,'YYYYMM') YM_START,
+		NVL(TO_CHAR(signaturedate,'YYYYMM'),'999912') YM_END
+		/*,progressiontech, datefinancialproposalagreed, datevalidated, datelegalagreement, d.createdon deal_createon, landlordsignaturedate, signaturedate,*/
+	FROM finops.dwh.crm_deal d 
+	LEFT JOIN finops.dwh.crm_quote q ON q.opportunityid = d.opportunityid
+	WHERE --d.opportunityid='11f976ee-4999-4f6c-beb9-12ee458a8df6'--'5b6b7053-7c73-4c7c-bd57-3fbf65bf46e9' AND 
+		(q.createdon< DATEADD(minute, -1, signaturedate)
+		OR signaturedate IS NULL)
+		AND progressiontech >= 90
+           and  q.typecode !='809020000' -- pas quote fin quote fin
+	QUALIFY filter = true
+)
+, LT_100 AS (
+	SELECT 
+		d.opportunityid, 
+		d.id,
+		q.quoteid,
+		'100' fact_prog,
+		q.name,
+		q.createdon quote_createon,
+		true filter,
+		TO_CHAR(quote_createon,'YYYYMM') YM_START,
+		NVL(TO_CHAR(signaturedate,'YYYYMM'),'999912') YM_END
+		/*,progressiontech, datefinancialproposalagreed, datevalidated, datelegalagreement, d.createdon deal_createon, landlordsignaturedate, signaturedate,*/
+	FROM finops.dwh.crm_deal d 
+	 left JOIN finops.dwh.crm_quote q ON q.opportunityid = d.opportunityid AND 
+    d.quoteid = q.quoteid
+	WHERE --d.opportunityid='6d4a9d80-bd0b-ef11-9f89-000d3abaebc4' AND
+		progressiontech = 100
+)
+SELECT * exclude(filter)
+FROM
+(
+	SELECT * FROM LT_10
+	UNION ALL
+	SELECT * FROM LT_50
+	UNION ALL
+	SELECT * FROM LT_70
+	UNION ALL
+	SELECT * FROM LT_90
+	UNION ALL
+	SELECT * FROM LT_100)
+  );
+[0m17:06:07.421009 [debug] [Thread-1 (]: On model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "snfk_urw", "target_name": "dev", "node_id": "model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY"} */
+create or replace   view EXPOSE_DEV.DPULSE.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY
+  
+   as (
+    
+
+select 
+ PC_ID,
+ PRODUCT_EXT_REF,
+ CONTRACT_ID,
+BU_EXTREF ,
+    case  when  SCENARIOS_RR like 'CLOSING4_%'
+       then '01/01/'||year(current_date) 
+     else    '01/01/'||year(dateadd(year,1,current_date)) end YM_START ,
+    case  when  SCENARIOS_RR like 'CLOSING4_%'
+       then '31/12/'||year(current_date) 
+     else   '31/12/'||year(dateadd(year,1,current_date)) end   YM_END ,
+         currency, 
+        indicator_name KPI_TYPE, 
+        --indicator_denum,
+        indicator_num  KPI_AMOUNT,
+        'CONTRACT_PRODUCT' FACT_TYPE 
+--*  exclude (key_r,deleted,timestamp) 
+from DPERFMGT.V_DIM_RENT_ROLL_FOR_VACANCY dim 
+join (
+    select  key_r, 
+        currency, 
+        indicator_name, 
+        indicator_denum,
+        indicator_num
+from EXPOSE.DPERFMGT.PLANIT_OPERATION_CUBE_RENT_ROLL_FOR_VACANCY_W_CURRENCY_AGG
+union all
+select key_r, 
+        null currency, 
+        indicator_name, 
+        indicator_denum,
+        indicator_num 
+from EXPOSE.DPERFMGT.PLANIT_OPERATION_CUBE_RENT_ROLL_FOR_VACANCY_Wo_CURRENCY_AGG
+) kpi on kpi.key_r=dim.key_r
+ where 
+ dim.status =  'Occupied'
+--where --cscenario='FORECAST2' and  --cpropc='FR-SC-150' 
+
+--cutoffcalmonth='202506'
+--and clease='F106/11000186_SC'
+  );
+[0m17:06:07.421530 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:06:07.421878 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:06:07.451325 [debug] [Thread-4 (]: Using snowflake connection "model.snowflake.test_view"
+[0m17:06:07.451957 [debug] [Thread-3 (]: Using snowflake connection "model.snowflake.crm_test_dbt"
+[0m17:06:07.483743 [debug] [Thread-4 (]: On model.snowflake.test_view: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "snfk_urw", "target_name": "dev", "node_id": "model.snowflake.test_view"} */
+create or replace   view EXPOSE_DEV.DPULSE.test_view
+  
+   as (
+    select * from expose_dev.dpulse.crm_quote limit 1000
+  );
+[0m17:06:07.485376 [debug] [Thread-3 (]: On model.snowflake.crm_test_dbt: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "snfk_urw", "target_name": "dev", "node_id": "model.snowflake.crm_test_dbt"} */
+create or replace   view EXPOSE_DEV.DPULSE.crm_test_dbt
+  
+   as (
+    select * from finops_dev.dwh.crm_quote limit 1000
+  );
+[0m17:06:07.486521 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:06:07.486887 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:06:08.458887 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.037 seconds
+[0m17:06:08.480361 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df27b7c5-6341-4cd7-9829-fb183884aa25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2C6CE210>]}
+[0m17:06:08.480930 [info ] [Thread-1 (]: 1 of 4 OK created sql view model DPULSE.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY  [[32mSUCCESS 1[0m in 1.12s]
+[0m17:06:08.482003 [debug] [Thread-1 (]: Finished running node model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY
+[0m17:06:08.664441 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.243 seconds
+[0m17:06:08.669139 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df27b7c5-6341-4cd7-9829-fb183884aa25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2C56FEE0>]}
+[0m17:06:08.670436 [info ] [Thread-2 (]: 2 of 4 OK created sql view model DPULSE.crm_deal_quote_relevant ................ [[32mSUCCESS 1[0m in 1.31s]
+[0m17:06:08.672341 [debug] [Thread-2 (]: Finished running node model.snowflake.crm_deal_quote_relevant
+[0m17:06:10.025889 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.539 seconds
+[0m17:06:10.027712 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df27b7c5-6341-4cd7-9829-fb183884aa25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2C76ACB0>]}
+[0m17:06:10.028745 [info ] [Thread-3 (]: 3 of 4 OK created sql view model DPULSE.crm_test_dbt ........................... [[32mSUCCESS 1[0m in 2.67s]
+[0m17:06:10.029811 [debug] [Thread-3 (]: Finished running node model.snowflake.crm_test_dbt
+[0m17:06:11.187722 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 3.701 seconds
+[0m17:06:11.191093 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df27b7c5-6341-4cd7-9829-fb183884aa25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2C385750>]}
+[0m17:06:11.192327 [info ] [Thread-4 (]: 4 of 4 OK created sql view model DPULSE.test_view .............................. [[32mSUCCESS 1[0m in 3.83s]
+[0m17:06:11.193394 [debug] [Thread-4 (]: Finished running node model.snowflake.test_view
+[0m17:06:11.208458 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:06:11.208841 [debug] [MainThread]: Connection 'list_EXPOSE_DEV' was left open.
+[0m17:06:11.209227 [debug] [MainThread]: On list_EXPOSE_DEV: Close
+[0m17:06:11.279296 [debug] [MainThread]: Connection 'list_EXPOSE_DEV_DPULSE' was left open.
+[0m17:06:11.280136 [debug] [MainThread]: On list_EXPOSE_DEV_DPULSE: Close
+[0m17:06:11.369890 [debug] [MainThread]: Connection 'model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY' was left open.
+[0m17:06:11.370724 [debug] [MainThread]: On model.snowflake.V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY: Close
+[0m17:06:11.458226 [debug] [MainThread]: Connection 'model.snowflake.crm_deal_quote_relevant' was left open.
+[0m17:06:11.459172 [debug] [MainThread]: On model.snowflake.crm_deal_quote_relevant: Close
+[0m17:06:11.554315 [debug] [MainThread]: Connection 'model.snowflake.crm_test_dbt' was left open.
+[0m17:06:11.555424 [debug] [MainThread]: On model.snowflake.crm_test_dbt: Close
+[0m17:06:11.714066 [debug] [MainThread]: Connection 'model.snowflake.test_view' was left open.
+[0m17:06:11.715020 [debug] [MainThread]: On model.snowflake.test_view: Close
+[0m17:06:11.813734 [info ] [MainThread]: 
+[0m17:06:11.815058 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 5.97 seconds (5.97s).
+[0m17:06:11.817774 [debug] [MainThread]: Command end result
+[0m17:06:11.839212 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\alban.homo\dev\snfk_dbt\snfk_urw\target\manifest.json
+[0m17:06:11.842025 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\alban.homo\dev\snfk_dbt\snfk_urw\target\semantic_manifest.json
+[0m17:06:11.848142 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\alban.homo\dev\snfk_dbt\snfk_urw\target\run_results.json
+[0m17:06:11.848464 [info ] [MainThread]: 
+[0m17:06:11.849056 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:06:11.849461 [info ] [MainThread]: 
+[0m17:06:11.849777 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m17:06:11.850480 [debug] [MainThread]: Command `dbt run` succeeded at 17:06:11.850387 after 7.16 seconds
+[0m17:06:11.850757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB29AF37E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB2307A510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB29AA3B30>]}
+[0m17:06:11.851021 [debug] [MainThread]: Flushing usage events
+[0m17:06:12.171951 [debug] [MainThread]: An error was encountered while trying to flush usage events
