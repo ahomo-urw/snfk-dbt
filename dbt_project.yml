@@ -28,7 +28,11 @@ clean-targets: # directories to be removed by `dbt clean`
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
+<<<<<<< HEAD
   C:
+=======
+  snfk_urw:
+>>>>>>> master
     - example:
       +database: EXPOSE_DEV
       +schema: DPULSE
