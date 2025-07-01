@@ -1,7 +1,8 @@
 --create or replace view EXPOSE_DEV.DPULSE.CRM_RENTALUNIT_W_KEY
-create or replace view EXPOSE_DEV.DPULSE.CRM_RENTALUNIT_W_KEY
-COMMENT = 'AGAUDET: Created for external vizualisation tool and Plan-It Interface-ahomo modif 2025'
-as with lt_crm_rental_unit_quote as (
+{{ config(materialized='view') }}
+
+
+with lt_crm_rental_unit_quote as (
 select
 *
 from

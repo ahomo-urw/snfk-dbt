@@ -1,31 +1,5 @@
-create or replace table EXPOSE_DEV.DPERFMGT.T_FACT_LO_DEAL_PERFORMANCE(
-	OBJECT_TYPE,
-	LEASING_ORDER_ID,
-	DEAL_ID,
-	QUOTE_ID,
-	INDICATOR_NAME,
-	INDICATOR_AMOUNT,
-	CURRENCY,
-	RU_USAGE_CALC,
-	PERCENTAGE,
-	INDICATOR_MIN_AMOUNT,
-	INDICATOR_NUMBEROFMONTHS,
-	STARTDATE,
-	ENDDATE,
-	FREQUENCY,
-	CALC_PARAMETER_1,
-	CALC_PARAMETER_2,
-	ISLUMPSUM,
-	SOURCE,
-	MD_PULSE_ID
----aho202505
-    ,deal_creation
-    ,deal_financialproposalagreed
-    ,deal_datevalidated
-    ,deal_signaturedate
-    ,deal_landlordsignaturedate
-) COMMENT='AHOMO 202506: global perf model'
- as 
+{{ config(materialized='view') }}
+
 with lt_deal_referential     as (select * from dpulse.crm_deal_w_key ),
 
 --récuperation des lo

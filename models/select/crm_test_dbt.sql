@@ -1,1 +1,0 @@
-select * from finops_dev.dwh.crm_quote limit 1000

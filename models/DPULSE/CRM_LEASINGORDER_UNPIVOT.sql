@@ -1,15 +1,4 @@
-create or replace view EXPOSE_DEV.DPULSE.CRM_LEASINGORDER_UNPIVOT(
-	LEASING_ORDER_ID,
-	INDICATOR_NAME,
-	INDICATOR_AMOUNT,
-	CURRENCY,
-	RU_USAGE_CALC,
-	PERCENTAGE,
-	STARTDATE,
-	ENDDATE,
-) COMMENT='AGAUDET: Created for external vizualisation tool and Plan-It Interface => Only Target KPIs are used-AHOMO modif202505'
- as 
- 
+{{ config(materialized='view') }}
 with lt_leasing_order_pivot  as ( 
                                  select leasing_order_id--, leasing_order_id_high_level
                                       , indicator_name, indicator_amount

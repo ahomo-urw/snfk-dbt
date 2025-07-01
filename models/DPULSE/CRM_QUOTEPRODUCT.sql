@@ -1,5 +1,4 @@
-create or replace view EXPOSE_DEV.DPULSE.CRM_QUOTEPRODUCT  comment='AHOMO modif 202505'
-as
+{{ config(materialized='view') }}
 select  lower(quoteid)                  as quote_id
       , lower(quotedetailid)            as rental_unit_id
       , lower(productid)                as rental_unit_ref_id

@@ -1,5 +1,5 @@
-create or replace view EXPOSE_DEV.DPULSE.PLAN_IT_RDL_ATTRIBUTES
-as  
+{{ config(materialized='view') }}
+
 
 with
 

@@ -1,23 +1,4 @@
-create or replace view EXPOSE_DEV.DPULSE.CRM_DEAL_UNPIVOT(
-	LEASING_ORDER_ID,
-	DEAL_ID,
-	QUOTE_ID,
-	INDICATOR_NAME,
-	INDICATOR_AMOUNT,
-	CURRENCY,
-	RU_USAGE_CALC,
-	PERCENTAGE,
-	STARTDATE,
-	ENDDATE,
-    DEAL_DESC,       
-    PROGRESSION_PERCENTAGE, 
-    CREATED_ON,
-    DATEFINANCIALPROPOSALAGREED,
-    DATEVALIDATED,
-    SIGNATUREDATE,
-    SIGNATUREDATE_PROCESS
-) COMMENT='AGAUDET: Created for external vizualisation tool and Plan-It Interface- modif AHOMO202505'
- as 
+{{ config(materialized='view') }}
     with 
      lt_deal_referential     as (select * from dpulse.crm_deal_w_key ), --table temporaire crm_deal_w_key
 

@@ -1,3 +1,5 @@
+{{ config(materialized='view') }}
+
 create or replace table EXPOSE_DEV.DPERFMGT.T_FACT_PERFORMANCE
 --create or replace view  EXPOSE_DEV.DPULSE.V_FACT_PERFORMANCE_GLOBAL
 COMMENT = 'AHOMO: Created for external vizualisation 2025' as --deal metrics

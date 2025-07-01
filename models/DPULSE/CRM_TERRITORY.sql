@@ -1,24 +1,4 @@
-create or replace view EXPOSE_dev.DPULSE.CRM_TERRITORY(
-	TERRITORY_ID,
-	IDCONNECT,
-	ISCATEGORY,
-	ISCATEGORYNAME,
-	LANGUAGE,
-	MDMID,
-	SHORTNAME,
-	TYPECODE,
-	TYPECODENAME,
-	TYPEPPCCODE,
-	TYPEPPCCODENAME,
-	DESCRIPTION,
-	NAME,
-	PARENTTERRITORYID,
-	PARENTTERRITORYIDNAME,
-	TRANSACTIONCURRENCYID,
-	TRANSACTIONCURRENCYIDNAME,
-	SRIEXCLUSION,
-	PROPERTYCOMPANYEXTREF
-) as 
+{{ config(materialized='view') }}
 select ifnull(territoryid,'')      as territory_id
      , * exclude(territoryid)
 from finops.dwh.crm_territory;

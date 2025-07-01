@@ -1,5 +1,4 @@
-create or replace view EXPOSE_DEV.DPULSE.CRM_DEALCPPRODUCT
-as
+{{ config(materialized='view') }}
     select ifnull(opportunityid,'')                                         as deal_id
          , ifnull(opportunityproductid,'')                                  as rental_unit_id
          , ifnull(productid,'')                                             as rental_unit_ref_id
