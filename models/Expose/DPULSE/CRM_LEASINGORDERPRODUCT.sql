@@ -4,4 +4,4 @@ select ifnull(leasingorderid,'')                                        as leasi
      , lower(productid)                                                 as rental_unit_ref_id
      , lower(buildingterritoryid)                                       as territory_id
      , * exclude(leasingorderid, productid, buildingterritoryid)
-from finops.dwh.crm_leasingorderproduct;
+from finops.dwh.crm_leasingorderproduct

@@ -1,6 +1,13 @@
 
 version: 2
 
+sources:
+  - name: finops
+    database: finops
+    schema: dwh
+    tables:
+      - name: CRM_PRODUCTINFORMATION
+
 models:
   - name: CRM_DEAL_QUOTE_RELEVANT
     description: "les deal_quote pour chaque step"

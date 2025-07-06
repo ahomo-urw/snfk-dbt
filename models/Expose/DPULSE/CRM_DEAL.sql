@@ -1,4 +1,6 @@
 {{ config(materialized='view') }}
+
+
 select 
 scopeidname as scope
  , ifnull(leasingorderid,'')            as leasing_order_id
