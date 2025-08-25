@@ -1,7 +1,6 @@
 --create or replace view EXPOSE_DEV.DPULSE.CRM_RENTALUNIT_W_KEY
 {{ config(materialized='view') }}
 
-
 with lt_crm_rental_unit_quote as (
 select
 *
