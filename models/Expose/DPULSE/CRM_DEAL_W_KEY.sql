@@ -1,4 +1,6 @@
 {{ config(materialized='view') }}
+
+
 with lt_crm_deal as (
     select
         *

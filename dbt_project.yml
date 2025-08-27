@@ -1,8 +1,7 @@
-name: 'URW'
+name: "URW"
 version: "1.0.0"
 
-
-profile: 'snfk_urw'
+profile: "snfk_urw"
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
