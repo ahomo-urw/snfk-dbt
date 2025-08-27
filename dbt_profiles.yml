@@ -1,24 +1,24 @@
-GLOBAL_PERFMGT:
+snfk_urw:
   target: dev
   outputs:
     dev:
       type: snowflake
       account: URW-URW
       user: 20250093
-      #user: ALBAN.HOMO 
+      #user: ALBAN.HOMO
       authenticator: externalbrowser
       role: RUSER_ALBANHOMO
       database: EXPOSE_DEV
       warehouse: EUGENERIC
       schema: DPULSE
       threads: 200
- # target: prod
- # outputs:
+    # target: prod
+    # outputs:
     prod:
       type: snowflake
       account: URW-URW
       user: 20250093
-      #user: ALBAN.HOMO 
+      #user: ALBAN.HOMO
       authenticator: externalbrowser
       role: RUSER_ALBANHOMO
       database: EXPOSE
