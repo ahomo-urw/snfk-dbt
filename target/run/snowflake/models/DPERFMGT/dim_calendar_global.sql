@@ -1,0 +1,8 @@
+
+  create or replace   view EXPOSE_DEV.DPULSE.dim_calendar_global
+  
+   as (
+    create or replace table EXPOSE_DEV.DPERFMGT.DIM_CALENDAR_GLOBAL as 
+SELECT DISTINCT CAL_ID FROM EXPOSE_DEV.DPERFMGT.DIM_PIVOT_CALENDAR_GLOBAL order by CAL_ID DESC;
+  );
+
