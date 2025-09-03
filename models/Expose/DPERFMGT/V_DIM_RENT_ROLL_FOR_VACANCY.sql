@@ -1,3 +1,4 @@
+{{ config(materialized='view') }}
 select
 scenarios_rr,
 key_r,

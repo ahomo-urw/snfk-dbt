@@ -1,4 +1,7 @@
 {{ config(materialized='view') }}
+
+
+
 select
     distinct a.account_id brand_guid,
     a.name Name,

@@ -15,7 +15,7 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  snfk_urw:
+  +snfk_urw:
     - DWH:
       +database: "{{ 'FINOPS' if target.name == 'dev' else 'FINOPS' }}"
       +schema: DWH

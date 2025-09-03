@@ -1,17 +1,16 @@
-
 version: 2
 
 models:
   - name: V_FACT_CONTRACT_PRODUCT_RENT_ROLL_FOR_VACANCY
-    comment: " SGE202506: vacancy planit du rent roll pour reporting PBI"
-    columns:  
-      - name: 	PC_ID,
-      - name: 	PRODUCT_EXT_REF,
-      - name: 	CONTRACT_ID,
-      - name: 	BU_EXTREF,
-      - name: 	YM_START,
-      - name: 	YM_END,
-      - name: 	CURRENCY,
-      - name: 	KPI_TYPE,
-      - name: 	KPI_AMOUNT,
+    description: " SGE202506: vacancy planit du rent roll pour reporting PBI"
+    columns:
+      - name: PC_ID,
+      - name: PRODUCT_EXT_REF,
+      - name: CONTRACT_ID,
+      - name: BU_EXTREF,
+      - name: YM_START,
+      - name: YM_END,
+      - name: CURRENCY,
+      - name: KPI_TYPE,
+      - name: KPI_AMOUNT,
       - name: FACT_TYPE
