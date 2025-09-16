@@ -5,7 +5,7 @@
 source $1
 
 # Parcourir chaque dossier (chaque schéma)
-for schema_dir in */ ; do
+for schema_dir in */sql/models/ ; do
     schema_name=$(basename "$schema_dir")
     echo "🔁 Déploiement du schéma : $schema_name"
 
