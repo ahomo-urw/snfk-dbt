@@ -1,0 +1,36 @@
+stages:
+  - deploy
+
+variables:
+  SNOWSQL_ACCOUNT: $SNOWFLAKE_ACCOUNT
+  SNOWSQL_USER: $SNOWFLAKE_USER
+  SNOWSQL_ROLE: $SNOWFLAKE_ROLE
+  SNOWSQL_WAREHOUSE: $SNOWFLAKE_WAREHOUSE
+  SNOWSQL_DATABASE: $SNOWFLAKE_DATABASE
+
+.deploy_template: &deploy_template
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache bash curl unzip
+    - curl -O https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/snowsql-linux_x86_64.bash
+    - bash snowsql-linux_x86_64.bash
+    - export PATH=$PATH:/root/.snowsql
+  script:
+    - chmod +x deploy.sh
+    - ./deploy.sh env/$CI_ENVIRONMENT_NAME.env
+
+deploy_dev:
+  <<: *deploy_template
+  stage: deploy
+  environment:
+    name: dev
+  only:
+    - dev
+
+deploy_prod:
+  <<: *deploy_template
+  stage: deploy
+  environment:
+    name: prod
+  only:
+    - main

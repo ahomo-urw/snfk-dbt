@@ -288,3 +288,54 @@ Database Error
   ligne d'erreur de syntaxe 1 à la position 50, « ( » inattendu.
 [0m19:11:01.980385 [debug] [MainThread]: Command `dbt run` failed at 19:11:01.980279 after 2.84 seconds
 [0m19:11:01.980670 [debug] [MainThread]: Flushing usage events
+[0m15:28:05.660398 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 15:28:05.878722 | c20c43cd-6e3f-4df8-96ba-512813a7401a ==============================
+[0m15:28:05.878722 [info ] [MainThread]: Running with dbt=1.10.2
+[0m15:28:05.879847 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'printer_width': '80', 'log_path': 'c:\\Users\\alban.homo\\dev\\snfk_dbt\\snfk_urw\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\alban.homo\\.dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m15:28:06.164559 [debug] [MainThread]: Set downloads directory='C:\Users\ALBAN~1.HOM\AppData\Local\Temp\dbt-downloads-oz6j3qzv'
+[0m15:28:06.165310 [info ] [MainThread]: Installing https://github.com/dbt-labs/dbt-utils.git
+[0m15:28:06.165991 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/dbt-labs/dbt-utils.git b03949bb53de3439f6a8057088ba4032"
+[0m15:28:07.748546 [debug] [MainThread]: STDOUT: "b''"
+[0m15:28:07.748912 [debug] [MainThread]: STDERR: "b"Cloning into 'b03949bb53de3439f6a8057088ba4032'...\n""
+[0m15:28:07.749225 [debug] [MainThread]: Pulling new dependency b03949bb53de3439f6a8057088ba4032.
+[0m15:28:07.749428 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m15:28:07.843896 [debug] [MainThread]: STDOUT: "b'7672637704c7ae428125d8aa1769e5e34ae32251\n'"
+[0m15:28:07.844255 [debug] [MainThread]: STDERR: "b''"
+[0m15:28:07.844560 [debug] [MainThread]: Checking out revision e164c645238ca98f21b2ecc558912b94b3d75a9f.
+[0m15:28:07.844766 [debug] [MainThread]: Executing "git fetch origin --depth 1 e164c645238ca98f21b2ecc558912b94b3d75a9f"
+[0m15:28:09.054222 [debug] [MainThread]: STDOUT: "b''"
+[0m15:28:09.054582 [debug] [MainThread]: STDERR: "b'From https://github.com/dbt-labs/dbt-utils\n * branch            e164c645238ca98f21b2ecc558912b94b3d75a9f -> FETCH_HEAD\n'"
+[0m15:28:09.054825 [debug] [MainThread]: Executing "git reset --hard e164c645238ca98f21b2ecc558912b94b3d75a9f"
+[0m15:28:09.226600 [debug] [MainThread]: STDOUT: "b'HEAD is now at e164c64 Update changelog for 1.3.0 (#943)\n'"
+[0m15:28:09.226962 [debug] [MainThread]: STDERR: "b''"
+[0m15:28:09.227189 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m15:28:09.318364 [debug] [MainThread]: STDOUT: "b'e164c645238ca98f21b2ecc558912b94b3d75a9f\n'"
+[0m15:28:09.318718 [debug] [MainThread]: STDERR: "b''"
+[0m15:28:09.319031 [debug] [MainThread]: Checked out at e164c64.
+[0m15:28:09.319244 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m15:28:09.414883 [debug] [MainThread]: STDOUT: "b'e164c645238ca98f21b2ecc558912b94b3d75a9f\n'"
+[0m15:28:09.415233 [debug] [MainThread]: STDERR: "b''"
+[0m15:28:09.416189 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/dbt-labs/dbt-utils.git b03949bb53de3439f6a8057088ba4032"
+[0m15:28:09.507618 [debug] [MainThread]: STDOUT: "b''"
+[0m15:28:09.507978 [debug] [MainThread]: STDERR: "b"fatal: destination path 'b03949bb53de3439f6a8057088ba4032' already exists and is not an empty directory.\n""
+[0m15:28:09.508182 [debug] [MainThread]: command return code=128
+[0m15:28:09.508585 [debug] [MainThread]: Updating existing dependency b03949bb53de3439f6a8057088ba4032.
+[0m15:28:09.508782 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m15:28:09.595391 [debug] [MainThread]: STDOUT: "b'e164c645238ca98f21b2ecc558912b94b3d75a9f\n'"
+[0m15:28:09.595753 [debug] [MainThread]: STDERR: "b''"
+[0m15:28:09.596055 [debug] [MainThread]: Checking out revision e164c645238ca98f21b2ecc558912b94b3d75a9f.
+[0m15:28:09.596260 [debug] [MainThread]: Executing "git fetch origin --depth 1 e164c645238ca98f21b2ecc558912b94b3d75a9f"
+[0m15:28:10.586564 [debug] [MainThread]: STDOUT: "b''"
+[0m15:28:10.586939 [debug] [MainThread]: STDERR: "b'From https://github.com/dbt-labs/dbt-utils\n * branch            e164c645238ca98f21b2ecc558912b94b3d75a9f -> FETCH_HEAD\n'"
+[0m15:28:10.587272 [debug] [MainThread]: Executing "git reset --hard e164c645238ca98f21b2ecc558912b94b3d75a9f"
+[0m15:28:10.704285 [debug] [MainThread]: STDOUT: "b'HEAD is now at e164c64 Update changelog for 1.3.0 (#943)\n'"
+[0m15:28:10.704872 [debug] [MainThread]: STDERR: "b''"
+[0m15:28:10.705346 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m15:28:10.798567 [debug] [MainThread]: STDOUT: "b'e164c645238ca98f21b2ecc558912b94b3d75a9f\n'"
+[0m15:28:10.798919 [debug] [MainThread]: STDERR: "b''"
+[0m15:28:10.799216 [debug] [MainThread]: Already at e164c64, nothing to do.
+[0m15:28:10.801539 [info ] [MainThread]: Installed from revision e164c645238ca98f21b2ecc558912b94b3d75a9f
+[0m15:28:10.803011 [debug] [MainThread]: Command `cli deps` succeeded at 15:28:10.802854 after 5.19 seconds
+[0m15:28:10.803359 [debug] [MainThread]: Flushing usage events
