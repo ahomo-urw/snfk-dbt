@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: CRM_DEAL_QUOTE_RELEVANT
+    description: "les deal_quote pour chaque step"
+    columns:
+      - name: opportunityid
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null

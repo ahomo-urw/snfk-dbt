@@ -1,4 +1,5 @@
 {{ config(materialized='view') }}
+as
     select ifnull(opportunityid,'')                                         as deal_id
          , ifnull(opportunityproductid,'')                                  as rental_unit_id
          , ifnull(productid,'')                                             as rental_unit_ref_id

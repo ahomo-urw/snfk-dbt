@@ -1,0 +1,14 @@
+version: "1"
+context:
+  active-host: "kb497.us1.dbt.com"
+  active-project: "70471823424223"
+projects:
+  - project-name: "DbtAlban"
+    project-id: "70471823424223"
+    account-name: "SQLI"
+    account-id: "70471823421066"
+    account-host: "kb497.us1.dbt.com"
+    token-name: "cloud-cli-9cf1"
+    token-value: "dbtu_b9PTBkA2kAzkcavOLkfvg9qF43rYr1rsD0ssFfCyMZvGLrjETk"
+
+

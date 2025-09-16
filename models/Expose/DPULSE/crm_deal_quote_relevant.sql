@@ -1,5 +1,4 @@
 {{ config(materialized='view') }}
-
 WITH LT_10 AS (
 	SELECT 
 		d.opportunityid, 
